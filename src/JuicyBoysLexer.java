@@ -95,8 +95,10 @@ public class JuicyBoysLexer extends Lexer {
 		tokenNames = new String[_SYMBOLIC_NAMES.length];
 		for (int i = 0; i < tokenNames.length; i++) {
 			tokenNames[i] = VOCABULARY.getLiteralName(i);
+
 			if (tokenNames[i] == null) {
 				tokenNames[i] = VOCABULARY.getSymbolicName(i);
+
 			}
 
 			if (tokenNames[i] == null) {

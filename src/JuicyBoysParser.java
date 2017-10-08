@@ -89,7 +89,7 @@ public class JuicyBoysParser extends Parser {
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
-	/**
+	/**s
 	 * @deprecated Use {@link #VOCABULARY} instead.
 	 */
 	@Deprecated

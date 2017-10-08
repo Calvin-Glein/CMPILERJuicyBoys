@@ -1,15 +1,19 @@
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
+import org.antlr.v4.runtime.Token;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class UI {
     private JTextArea textArea1;
     private JTextArea textArea2;
     private JButton button1;
     private JPanel panel;
+    private ArrayList<String> TokenTypes= new ArrayList<String>();
+
 
     private String code = "";
 
@@ -21,6 +25,10 @@ public class UI {
                 run();
             }
         });
+
+
+        //Add token types to array
+
     }
 
     public static void main (String[] args){
@@ -29,6 +37,8 @@ public class UI {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+        frame.setSize(500, 500);
+
 
     }
 
@@ -41,10 +51,14 @@ public class UI {
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         JuicyBoysParser parser = new JuicyBoysParser(tokens);
 
+
         tokens.fill();
-        for (Object tok : tokens.getTokens()) {
-            textArea2.setText(textArea2.getText() + tok + "\n");
+        for (Token tok : tokens.getTokens()) {
+            textArea2.setText(textArea2.getText() + tok.getText() + " -> ");
+            textArea2.setText(textArea2.getText() + lexer.VOCABULARY.getSymbolicName(tok.getType())+ "\n");
         }
+
+
     }
 }
 
