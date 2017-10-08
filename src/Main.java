@@ -20,12 +20,7 @@ public class Main {
 			System.out.println(tok);
 		}
 
-		System.out.println("next");
 
-        // Print tokens AFTER filtering
-		for (Object tok : tokens.getTokens()) {
-			System.out.println(tok);
-		}
 
         ParseTree tree = parser.start();
 
