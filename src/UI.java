@@ -1,6 +1,7 @@
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.Token;
+import org.antlr.v4.runtime.tree.ParseTree;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -12,7 +13,10 @@ public class UI {
     private JTextArea textArea2;
     private JButton button1;
     private JPanel panel;
+    private JTextArea textArea3;
+    private JTextArea textArea4;
     private ArrayList<String> TokenTypes= new ArrayList<String>();
+
 
 
     private String code = "";
@@ -32,14 +36,15 @@ public class UI {
     }
 
     public static void main (String[] args){
+
+        JScrollPane scrollPane;
+
         JFrame frame = new JFrame("IDE");
         frame.setContentPane(new UI().panel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
         frame.setSize(500, 500);
-
-
     }
 
     public void run() {
@@ -50,13 +55,17 @@ public class UI {
 
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         JuicyBoysParser parser = new JuicyBoysParser(tokens);
+        ParseTree tree = parser.start();
+
+        System.out.println(tree.toStringTree(parser));
 
 
         tokens.fill();
         for (Token tok : tokens.getTokens()) {
-            textArea2.setText(textArea2.getText() + tok.getText() + " -> ");
-            textArea2.setText(textArea2.getText() + lexer.VOCABULARY.getSymbolicName(tok.getType())+ "\n");
+            textArea2.setText(textArea2.getText() + tok.getText() + " -> " + lexer.VOCABULARY.getSymbolicName(tok.getType())+ "\n");
+            textArea3.setText(textArea3.getText() + lexer.VOCABULARY.getSymbolicName(tok.getType())+ "\n");
         }
+        textArea4.setText(tree.toStringTree(parser));
 
 
     }

@@ -37,6 +37,9 @@ data_type         	: INTEGER_KEYWORD
                     | DOUBLE_KEYWORD
                     | CHAR_KEYWORD
                     | STRING_KEYWORD
+                    | BOOLEAN_KEYWORD
+                    | FLOAT_KEYWORD
+                    | ARRAY_IDENTIFIER
                     ;
 identifier_list   	: VARIABLE_IDENTIFIER COMMA identifier_list
                    	| VARIABLE_IDENTIFIER
@@ -52,6 +55,7 @@ statement         	    : assignment_statement
                     	| for_statement
                     	| return_statement
                     	| OPEN_BRACE  statement_list CLOSE_BRACE
+                    	| COMMENT_BLOCK
                         ;
 
 assignment_statement 	: VARIABLE_IDENTIFIER ASSIGNMENT_OPERATOR expression TERMINATOR
@@ -209,6 +213,8 @@ RETURN_KEYWORD	: 'balik'
                         ;
 INTEGER_KEYWORD	: 'numero'
                         ;
+BOOLEAN_KEYWORD : 'bolyan'
+                        ;
 FLOAT_KEYWORD	: 'lutang'
                         ;
 STRING_KEYWORD	: 'sinulid'
@@ -305,6 +311,9 @@ TRUE_LITERAL	: 'totoo'
                         ;
 FALSE_LITERAL	: 'talon'
                         ;
+
+
+
 
 WS  : [ \t\r\n]+ -> skip;
 
