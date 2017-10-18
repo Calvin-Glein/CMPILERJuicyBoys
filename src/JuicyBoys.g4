@@ -21,7 +21,7 @@ parameter_list    	: parameters
 parameters        	: var_decl COMMA parameters
                    	| var_decl
                     ;
-function_content  	: OPEN_BRACE vardecl_list (statement_list)? CLOSE_BRACE
+function_content  	: OPEN_BRACE (vardecl_list)? (statement_list)? CLOSE_BRACE
                     ;
 main_function     	: VOID_KEYWORD MAIN_KEYWORD OPEN_PAR CLOSE_PAR (function_content)?
                     ;
@@ -47,7 +47,7 @@ identifier_list   	: VARIABLE_IDENTIFIER COMMA identifier_list
 
 //Productions for statements
 
-statement         	    : assignment_statement
+statement         	    : assignment_statement TERMINATOR
                     	| funccall_statement
                     	| if_statement
                     	| while_statement
@@ -56,9 +56,13 @@ statement         	    : assignment_statement
                     	| return_statement
                     	| OPEN_BRACE  statement_list CLOSE_BRACE
                     	| COMMENT_BLOCK
+                    	| output_list
+                    	| output
                         ;
 
-assignment_statement 	: VARIABLE_IDENTIFIER ASSIGNMENT_OPERATOR expression TERMINATOR
+assignment_statement 	: VARIABLE_IDENTIFIER ASSIGNMENT_OPERATOR expression
+                        | VARIABLE_IDENTIFIER INCREMENTAL_OPERATOR
+                        | VARIABLE_IDENTIFIER DECREMENTAL_OPERATOR
                         ;
 funccall_statement  	: FUNCTION_IDENTIFIER OPEN_PAR actual_parameter_list CLOSE_PAR TERMINATOR
                         | FUNCTION_IDENTIFIER OPEN_PAR CLOSE_PAR TERMINATOR
@@ -79,12 +83,13 @@ return_statement  	    : RETURN_KEYWORD expression TERMINATOR
                         ;
 if_statement        	: IF_STATEMENT OPEN_PAR  bool_expression CLOSE_PAR statement ELSE_STATEMENT statement
                         | IF_STATEMENT OPEN_PAR bool_expression  CLOSE_PAR statement
+                        | IF_STATEMENT OPEN_PAR bool_expression  {notifyErrorListeners("Missing ')' ");}
                         ;
 while_statement   	    : WHILE_LOOP OPEN_PAR bool_expression CLOSE_PAR statement
                         ;
 do_while_statement	    : DO_LOOP statement WHILE_LOOP OPEN_PAR bool_expression_for CLOSE_PAR TERMINATOR
                         ;
-for_statement     	    : FOR_LOOP OPEN_PAR assignment_statement TERMINATOR bool_expression_for TERMINATOR assignment_statement CLOSE_PAR  statement
+for_statement     	    : FOR_LOOP OPEN_PAR INTEGER_KEYWORD assignment_statement TERMINATOR bool_expression_for TERMINATOR assignment_statement CLOSE_PAR statement
                         ;
 statement_list    	    : statement statement_list
                     	| statement
@@ -134,6 +139,8 @@ bool_expression_for   : num_expression rel_op num_expression
                     	| bool_logical EQUALS_OPERATOR bool_expression
                     	| bool_logical NOT_EQUAL_OPERATOR bool_expression
                     	| bool_logical
+                    	| VARIABLE_IDENTIFIER rel_op INTEGER_LITERAL
+                    	| VARIABLE_IDENTIFIER rel_op VARIABLE_IDENTIFIER
                         ;
 rel_op            	: EQUALS_OPERATOR
                     	| NOT_EQUAL_OPERATOR
@@ -175,11 +182,12 @@ sign              	: ADDITION_OPERATOR
 
 //Productions for Input and Output
 
-output              	: OUTPUT_FUNCTION OPEN_PAR output_list CLOSE_PAR TERMINATOR
+output              	: OUTPUT_FUNCTION OPEN_PAR STRING_LITERAL CLOSE_PAR TERMINATOR
                         ;
 output_list	        : expression
                         | VARIABLE_IDENTIFIER
                         | funccall_statement
+                        | STRING_LITERAL
                         ;
 input	                : VARIABLE_IDENTIFIER ASSIGNMENT_OPERATOR INPUT_FUNCTION input_list TERMINATOR
                         ;
@@ -193,7 +201,7 @@ input_list	        : INTEGER_LITERAL
 
 QUOTE1                   : '\''
                         ;
-QUOTE2                   : '"'
+QUOTE2                   : '^'
                         ;
 INTEGER_LITERAL              	: [0-9]+
                         ;
@@ -229,7 +237,7 @@ DO_LOOP	: 'gawin habang'
                         ;
 WHILE_LOOP	: 'habang'
                         ;
-FOR_LOOP	: 'simulan hanggang'
+FOR_LOOP	: 'simulanhanggang'
                         ;
 OUTPUT_FUNCTION	: 'isulat'
                         ;

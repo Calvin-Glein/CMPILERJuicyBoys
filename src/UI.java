@@ -2,6 +2,7 @@ import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.ParseTree;
+import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -55,7 +56,20 @@ public class UI {
 
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         JuicyBoysParser parser = new JuicyBoysParser(tokens);
+
+        parser.removeErrorListeners();
+        parser.addErrorListener(new JuicyBoysANTLRErrorListener());
+
         ParseTree tree = parser.start();
+
+        ParseTreeWalker walker = new ParseTreeWalker();
+        walker.walk( new JuicyBoysWalker(), tree );
+
+
+
+
+
+
 
         System.out.println(tree.toStringTree(parser));
 

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d3ffeaa-f4e0-49a8-b31b-d4b8ee7d361a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/JuicyBoysWalker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysLexer.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysLexer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Actual_parameter_listContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Actual_parameter_listContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Actual_paramsContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Actual_paramsContext.class" />
@@ -20,11 +22,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$ExpressionContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$ExpressionContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$For_statementContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$For_statementContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Funccall_statementContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Funccall_statementContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Funcdecl_listContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Funcdecl_listContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Function_contentContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Function_contentContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Function_declarationContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Function_declarationContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Function_noreturnContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Function_noreturnContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Function_returnContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Function_returnContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Identifier_listContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Identifier_listContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$If_statementContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$If_statementContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$InputContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$InputContext.class" />
@@ -37,12 +35,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Num_termContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Num_termContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$OutputContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$OutputContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Output_listContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Output_listContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Parameter_listContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Parameter_listContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$ParametersContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$ParametersContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Rel_opContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Rel_opContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Return_statementContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Return_statementContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$SignContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$SignContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$StartContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$StartContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$StatementContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$StatementContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Statement_listContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Statement_listContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$String_expressionContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$String_expressionContext.class" />
@@ -61,7 +56,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JuicyBoysLexer.java" afterPath="$PROJECT_DIR$/src/JuicyBoysLexer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JuicyBoysLexer.tokens" afterPath="$PROJECT_DIR$/src/JuicyBoysLexer.tokens" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JuicyBoysParser.java" afterPath="$PROJECT_DIR$/src/JuicyBoysParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UI.form" afterPath="$PROJECT_DIR$/src/UI.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UI.java" afterPath="$PROJECT_DIR$/src/UI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -77,8 +71,66 @@
       <file leaf-file-name="UI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="57" column="40" lean-forward="false" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+            <state relative-caret-position="321">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JuicyBoysBaseListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JuicyBoysBaseListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JuicyBoysWalker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JuicyBoysWalker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9792">
+              <caret line="576" column="41" lean-forward="false" selection-start-line="576" selection-start-column="41" selection-end-line="576" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#275#276#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#5624#5625#0" expanded="true" />
+                <element signature="e#5679#5680#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JuicyBoysListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JuicyBoysListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JuicyBoys.g4" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/JuicyBoys.g4">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="80" column="25" lean-forward="true" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JuicyBoysANTLRErrorListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="25" column="52" lean-forward="false" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,35 +141,8 @@
       <file leaf-file-name="JScrollPane.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.desktop/javax/swing/JScrollPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
+            <state relative-caret-position="17">
               <caret line="529" column="9" lean-forward="false" selection-start-line="529" selection-start-column="9" selection-end-line="530" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UI.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JuicyBoysLexer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JuicyBoysLexer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="74" column="28" lean-forward="false" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JuicyBoys.g4" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/JuicyBoys.g4">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="267" column="25" lean-forward="false" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -126,9 +151,27 @@
       <file leaf-file-name="JuicyBoysParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JuicyBoysParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
+            <state relative-caret-position="461">
               <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1508341686775" expanded="true" signature="113379:113563" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JuicyBoysLexer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JuicyBoysLexer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="87" column="56" lean-forward="false" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
+              <folding>
+                <element signature="e#5674#5675#0" expanded="true" />
+                <element signature="e#5698#5699#0" expanded="true" />
+                <element signature="e#5748#5749#0" expanded="true" />
+                <element signature="e#5772#5773#0" expanded="true" />
+                <marker date="1508341686066" expanded="true" signature="18579:18763" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,30 +197,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>start</find>
-      <find>open_par</find>
-      <find>baryabo</find>
-      <find>statement_list</find>
-      <find>boyd</find>
-      <find>vo</find>
-      <find>symbol</find>
-      <find>float</find>
-      <find>bool_expre</find>
-      <find>and</find>
-      <find>hindi</find>
-      <find>input</find>
-      <find>basahin</find>
-      <find>input_function</find>
-      <find>output</find>
-      <find>incremental</find>
       <find>float_ke</find>
       <find>float_keyword</find>
       <find>array_identifier</find>
       <find>varde</find>
       <find>kowment</find>
       <find>comment_block</find>
-      <find>statement</find>
       <find>commen</find>
+      <find>walk</find>
+      <find>output_</find>
+      <find>function_con</find>
+      <find>for_loop</find>
+      <find>num_ex</find>
+      <find>for_loo</find>
+      <find>assignment_statement</find>
+      <find>string</find>
+      <find>for_lo</find>
+      <find>for_Loo</find>
+      <find>assign</find>
+      <find>incremental_Op</find>
+      <find>output_function</find>
+      <find>string_lite</find>
+      <find>output_func</find>
+      <find>output</find>
+      <find>output_list</find>
+      <find>isulat</find>
+      <find>exitever</find>
+      <find>you have</find>
+      <find>output_funct</find>
+      <find>statement</find>
+      <find>you have a mis</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,8 +250,10 @@
         <option value="$PROJECT_DIR$/src/CustomOutputStream.java" />
         <option value="$PROJECT_DIR$/src/JuicyBoysLexer.java" />
         <option value="$PROJECT_DIR$/src/JuicyBoysParser.java" />
-        <option value="$PROJECT_DIR$/src/UI.java" />
         <option value="$PROJECT_DIR$/src/UI.form" />
+        <option value="$PROJECT_DIR$/src/JuicyBoysWalker.java" />
+        <option value="$PROJECT_DIR$/src/UI.java" />
+        <option value="$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java" />
         <option value="$PROJECT_DIR$/src/JuicyBoys.g4" />
       </list>
     </option>
@@ -231,8 +282,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,12 +296,20 @@
             </path>
             <path>
               <item name="CMPILERJuicyBoys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMPILERJuicyBoys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="CMPILERJuicyBoys" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
@@ -264,6 +321,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../antlr-4.7-complete.jar!/" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="320" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/School/IntelliJ Workspace/CMPILERJuicyBoys/src/UI.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -397,23 +455,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17307693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17307693" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53698224" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53698224" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53698224" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.58284026" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19253294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -426,6 +484,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -433,7 +492,7 @@
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53698224" sideWeight="0.5058565" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -444,15 +503,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17307693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17307693" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53698224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53698224" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19253294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19253294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -468,6 +527,40 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoysParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoys.tokens">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="57" column="40" lean-forward="false" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoys.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4539">
+          <caret line="267" column="25" lean-forward="false" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
@@ -482,7 +575,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
           <caret line="73" column="28" lean-forward="false" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#5674#5675#0" expanded="true" />
+            <element signature="e#5698#5699#0" expanded="true" />
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5772#5773#0" expanded="true" />
+            <marker date="1508341686066" expanded="true" signature="18579:18763" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -534,7 +633,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
           <caret line="73" column="28" lean-forward="false" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#5674#5675#0" expanded="true" />
+            <element signature="e#5698#5699#0" expanded="true" />
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5772#5773#0" expanded="true" />
+            <marker date="1508341686066" expanded="true" signature="18579:18763" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -576,7 +681,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1870">
           <caret line="110" column="13" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#5674#5675#0" expanded="true" />
+            <element signature="e#5698#5699#0" expanded="true" />
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5772#5773#0" expanded="true" />
+            <marker date="1508341686066" expanded="true" signature="18579:18763" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -638,7 +749,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#5674#5675#0" expanded="true" />
+            <element signature="e#5698#5699#0" expanded="true" />
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5772#5773#0" expanded="true" />
+            <marker date="1508341686066" expanded="true" signature="18579:18763" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -662,14 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JuicyBoysListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -711,34 +820,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JuicyBoysParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JuicyBoys.tokens">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
           <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JuicyBoysLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="74" column="28" lean-forward="false" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.desktop/javax/swing/JScrollPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="529" column="9" lean-forward="false" selection-start-line="529" selection-start-column="9" selection-end-line="530" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -748,20 +833,108 @@
         <state />
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.desktop/javax/swing/JScrollPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="529" column="9" lean-forward="false" selection-start-line="529" selection-start-column="9" selection-end-line="530" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../antlr-4.7-complete.jar!/org/antlr/v4/runtime/ANTLRInputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../antlr-4.7-complete.jar!/org/antlr/v4/runtime/tree/ParseTreeWalker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoysParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding>
+            <marker date="1508341686775" expanded="true" signature="113379:113563" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="57" column="40" lean-forward="false" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+        <state relative-caret-position="321">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoysWalker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9792">
+          <caret line="576" column="41" lean-forward="false" selection-start-line="576" selection-start-column="41" selection-end-line="576" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#5624#5625#0" expanded="true" />
+            <element signature="e#5679#5680#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoysBaseListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoysListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="52" lean-forward="false" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoysLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="87" column="56" lean-forward="false" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
+          <folding>
+            <element signature="e#5674#5675#0" expanded="true" />
+            <element signature="e#5698#5699#0" expanded="true" />
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5772#5773#0" expanded="true" />
+            <marker date="1508341686066" expanded="true" signature="18579:18763" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/JuicyBoys.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="267" column="25" lean-forward="false" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="25" />
+        <state relative-caret-position="195">
+          <caret line="80" column="25" lean-forward="true" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
           <folding />
         </state>
       </provider>
