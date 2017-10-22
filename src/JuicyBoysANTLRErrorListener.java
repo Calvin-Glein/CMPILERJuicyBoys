@@ -11,15 +11,27 @@ import java.util.Collections;
 import java.util.List;
 
 public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
+
+    String output = "";
+
     @Override
     public void syntaxError(Recognizer<?, ?> recognizer, Object o, int i, int i1, String s, RecognitionException e) {
         List<String> stack = ((Parser) recognizer).getRuleInvocationStack();
         Collections.reverse(stack);
-        System.out.println("Rule stack: " + stack);
+        /*System.out.println("Rule stack: " + stack);
         System.out.println("You have a syntax error at line: " + i);
-        System.out.println("At character position: " + i1);
+        System.out.println("At character position: " + i1);*/
 
+        output = "";
+        output = output + "Rule stack: " + stack + "\n";
+        output = output + "You have a syntax error at line: " + i + "\n";
+        output = output + "At character position: " + i1;
     }
+
+    public String getOutput(){
+        return output;
+    }
+
 
     @Override
     public void reportAmbiguity(Parser parser, DFA dfa, int i, int i1, boolean b, BitSet bitSet, ATNConfigSet atnConfigSet) {

@@ -10,18 +10,19 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class UI {
-    private JTextArea textArea1;
-    private JTextArea textArea2;
+    private JTextArea textAreaCodeInput;
+    private JTextArea textArea2Output;
     private JButton button1;
     private JPanel panel;
-    private JTextArea textArea3;
-    private JTextArea textArea4;
+    private JTextArea textAreaTokenTypes;
+    private JTextArea textAreaTree;
+    public JTextArea textAreaError;
+    private JScrollPane scrollPaneCodeInput;
+
     private ArrayList<String> TokenTypes= new ArrayList<String>();
 
-
-
     private String code = "";
-
+    private ArrayList<String> autocompleteWords = new ArrayList<String>();
 
     public UI() {
         button1.addActionListener(new ActionListener() {
@@ -30,15 +31,9 @@ public class UI {
                 run();
             }
         });
-
-
-        //Add token types to array
-
     }
 
-    public static void main (String[] args){
-
-        JScrollPane scrollPane;
+    public void initializeUI(){
 
         JFrame frame = new JFrame("IDE");
         frame.setContentPane(new UI().panel);
@@ -46,19 +41,26 @@ public class UI {
         frame.pack();
         frame.setVisible(true);
         frame.setSize(500, 500);
+
     }
 
     public void run() {
-        code = textArea1.getText();
+        textAreaError.setText("");
+        textArea2Output.setText("");
+        textAreaTree.setText("");
+        textAreaTokenTypes.setText("");
+
+        code = textAreaCodeInput.getText();
         ANTLRInputStream input = new ANTLRInputStream(code);
 
         JuicyBoysLexer lexer = new JuicyBoysLexer(input);
 
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         JuicyBoysParser parser = new JuicyBoysParser(tokens);
+        JuicyBoysANTLRErrorListener errorListener = new JuicyBoysANTLRErrorListener();
 
         parser.removeErrorListeners();
-        parser.addErrorListener(new JuicyBoysANTLRErrorListener());
+        parser.addErrorListener(errorListener);
 
         ParseTree tree = parser.start();
 
@@ -66,20 +68,16 @@ public class UI {
         walker.walk( new JuicyBoysWalker(), tree );
 
 
-
-
-
-
-
-        System.out.println(tree.toStringTree(parser));
-
-
         tokens.fill();
+
         for (Token tok : tokens.getTokens()) {
-            textArea2.setText(textArea2.getText() + tok.getText() + " -> " + lexer.VOCABULARY.getSymbolicName(tok.getType())+ "\n");
-            textArea3.setText(textArea3.getText() + lexer.VOCABULARY.getSymbolicName(tok.getType())+ "\n");
+            textArea2Output.setText(textArea2Output.getText() + tok.getText() + " -> " + lexer.VOCABULARY.getSymbolicName(tok.getType())+ "\n");
+            textAreaTokenTypes.setText(textAreaTokenTypes.getText() + lexer.VOCABULARY.getSymbolicName(tok.getType())+ "\n");
         }
-        textArea4.setText(tree.toStringTree(parser));
+
+
+        textAreaTree.setText(tree.toStringTree(parser));
+        textAreaError.setText(errorListener.getOutput());
 
 
     }

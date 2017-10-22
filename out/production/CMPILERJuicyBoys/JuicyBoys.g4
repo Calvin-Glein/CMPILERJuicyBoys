@@ -83,6 +83,7 @@ return_statement  	    : RETURN_KEYWORD expression TERMINATOR
                         ;
 if_statement        	: IF_STATEMENT OPEN_PAR  bool_expression CLOSE_PAR statement ELSE_STATEMENT statement
                         | IF_STATEMENT OPEN_PAR bool_expression  CLOSE_PAR statement
+                        | IF_STATEMENT OPEN_PAR bool_expression  {notifyErrorListeners("Missing ')' ");}
                         ;
 while_statement   	    : WHILE_LOOP OPEN_PAR bool_expression CLOSE_PAR statement
                         ;
