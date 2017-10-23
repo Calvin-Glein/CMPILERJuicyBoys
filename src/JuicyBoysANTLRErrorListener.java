@@ -32,7 +32,7 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
         output = output + "Rule stack: " + stack + "\n";
         output = output + "You have a syntax error at line: " + lineNumber + "\n";
         output = output + "At character position: " + charPositionInLine;
-        output = output + " \n \n Specific Error: " + msg;
+        output = output + " \n \n Specific Error: " + msg.toString();
 
 
         JDialog dialog = new JDialog();
@@ -85,11 +85,13 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
     public void reportAttemptingFullContext(Parser parser, DFA dfa, int i, int i1, BitSet bitSet, ATNConfigSet atnConfigSet) {
         System.out.println("Error: Attempting Full Context");
 
+
     }
 
     @Override
     public void reportContextSensitivity(Parser parser, DFA dfa, int i, int i1, int i2, ATNConfigSet atnConfigSet) {
         System.out.println("Error: Context Sensitivity");
+
 
     }
 }

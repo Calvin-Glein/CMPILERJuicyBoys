@@ -1,11 +1,9 @@
-import org.antlr.v4.runtime.ANTLRInputStream;
-import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.Token;
+import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.atn.PredictionMode;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 import javax.swing.*;
-import javax.xml.soap.Text;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -49,6 +47,13 @@ public class UI {
 
     }
 
+    public static class BailSimpleLexer extends JuicyBoysLexer  {
+        public BailSimpleLexer(CharStream input) { super(input); }
+        public void recover(LexerNoViableAltException e) {
+            throw new RuntimeException(e); // Bail out
+        }
+    }
+
     public void run() {
         textAreaError.setText("");
         textArea2Output.setText("");
@@ -63,10 +68,31 @@ public class UI {
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         JuicyBoysParser parser = new JuicyBoysParser(tokens);
         JuicyBoysANTLRErrorListener errorListener = new JuicyBoysANTLRErrorListener();
+        BailErrorStrategy bailErrorStrategy = new BailErrorStrategy();
+        JuicyBoysDefaultErrorStrategy defaultErrorStrategy =  new JuicyBoysDefaultErrorStrategy();
 
-       // parser.removeErrorListeners();
+        //remove the ConsoleErrorListeners
+        parser.removeErrorListeners();
+
+        //add our custom errorListner
         parser.addErrorListener(errorListener);
-        //System.out.print(parser.getErrorListeners().get(0).syntaxError(errorListener.getRecognizer(), errorListener.getO(), errorListener.getI(), errorListener.getI1(), errorListener.getS(), errorListener.getE()));
+
+
+
+
+        parser.addErrorListener(new DiagnosticErrorListener());
+
+        //make parser report all ambiguities
+        parser.getInterpreter()
+                .setPredictionMode(PredictionMode.LL_EXACT_AMBIG_DETECTION);
+
+
+        //add the bailerrorstrategy
+       // parser.setErrorHandler(bailErrorStrategy);
+
+        //add the defaultErrorStrategy
+        parser.setErrorHandler(defaultErrorStrategy);
+
 
 
         ParseTree tree = parser.start();
