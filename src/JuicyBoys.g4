@@ -183,6 +183,7 @@ sign              	: ADDITION_OPERATOR
 //Productions for Input and Output
 
 output              	: OUTPUT_FUNCTION OPEN_PAR STRING_LITERAL CLOSE_PAR TERMINATOR
+                        | OUTPUT_FUNCTION OPEN_PAR STRING_LITERAL CLOSE_PAR {notifyErrorListeners("Missing ';iStop' ");}
                         ;
 output_list	        : expression
                         | VARIABLE_IDENTIFIER
@@ -209,7 +210,7 @@ CHAR_LITERAL	: QUOTE1 [0-9a-zA-Z] QUOTE1
                         ;
 FLOAT_LITERAL	: [0-9]+'.'[0-9]+(('E' | 'e')'-'?[0-9]+)?
                         ;
-STRING_LITERAL	: QUOTE2 [ A-Za-z0-9]* QUOTE2
+STRING_LITERAL	: QUOTE2 [ A-Za-z0-9!]* QUOTE2
                         ;
 VARIABLE_IDENTIFIER	: 'baryabol ' [A-Za-z]+[0-9]*
                         ;

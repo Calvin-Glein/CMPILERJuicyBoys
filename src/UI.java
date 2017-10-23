@@ -59,8 +59,10 @@ public class UI {
         JuicyBoysParser parser = new JuicyBoysParser(tokens);
         JuicyBoysANTLRErrorListener errorListener = new JuicyBoysANTLRErrorListener();
 
-        parser.removeErrorListeners();
+       // parser.removeErrorListeners();
         parser.addErrorListener(errorListener);
+        //System.out.print(parser.getErrorListeners().get(0).syntaxError(errorListener.getRecognizer(), errorListener.getO(), errorListener.getI(), errorListener.getI1(), errorListener.getS(), errorListener.getE()));
+
 
         ParseTree tree = parser.start();
 

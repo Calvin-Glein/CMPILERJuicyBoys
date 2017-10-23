@@ -13,6 +13,10 @@ import java.util.List;
 public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
 
     String output = "";
+    Recognizer<?, ?> recognizer;
+    Object o;
+    int i; int i1; String s; RecognitionException e;
+
 
     @Override
     public void syntaxError(Recognizer<?, ?> recognizer, Object o, int i, int i1, String s, RecognitionException e) {
@@ -26,6 +30,32 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
         output = output + "Rule stack: " + stack + "\n";
         output = output + "You have a syntax error at line: " + i + "\n";
         output = output + "At character position: " + i1;
+        output = output + " \n \n Specific Error: " + s;
+
+    }
+
+    public Recognizer<?, ?> getRecognizer() {
+        return recognizer;
+    }
+
+    public Object getO() {
+        return o;
+    }
+
+    public int getI() {
+        return i;
+    }
+
+    public int getI1() {
+        return i1;
+    }
+
+    public String getS() {
+        return s;
+    }
+
+    public RecognitionException getE() {
+        return e;
     }
 
     public String getOutput(){
