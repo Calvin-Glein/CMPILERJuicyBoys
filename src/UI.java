@@ -1,32 +1,18 @@
-<<<<<<< HEAD
 
 import org.antlr.v4.runtime.*;
-=======
+
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.Token;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+
 import org.antlr.v4.runtime.atn.PredictionMode;
 
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.Token;
 
-=======
->>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
-=======
->>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
-=======
->>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
-=======
->>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
-
 import javax.swing.*;
 import javax.xml.soap.Text;
 import java.awt.event.ActionEvent;
