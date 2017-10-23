@@ -70,12 +70,18 @@ public class UI {
         JuicyBoysANTLRErrorListener errorListener = new JuicyBoysANTLRErrorListener();
         BailErrorStrategy bailErrorStrategy = new BailErrorStrategy();
         JuicyBoysDefaultErrorStrategy defaultErrorStrategy =  new JuicyBoysDefaultErrorStrategy();
+        ExceptionErrorStrategy exceptionErrorStrategy = new ExceptionErrorStrategy();
 
         //remove the ConsoleErrorListeners
         parser.removeErrorListeners();
 
-        //add our custom errorListner
-        parser.addErrorListener(errorListener);
+        //add our custom errorListener
+       // parser.addErrorListener(errorListener);
+
+
+        //remove lexer errorlistener
+        lexer.removeErrorListeners();
+        //lexer.addErrorListener(errorListener);
 
 
 
@@ -91,9 +97,13 @@ public class UI {
        // parser.setErrorHandler(bailErrorStrategy);
 
         //add the defaultErrorStrategy
-        parser.setErrorHandler(defaultErrorStrategy);
+       // parser.setErrorHandler(defaultErrorStrategy);
 
+        //add Exceptionerrorstrategy in the parser
+        parser.setErrorHandler(exceptionErrorStrategy);
 
+        //add a custom handler
+      //  parser.setErrorHandler(new JuicyBoysANTLRErrorStrategy());
 
         ParseTree tree = parser.start();
 
@@ -110,7 +120,7 @@ public class UI {
 
 
         textAreaTree.setText(tree.toStringTree(parser));
-        textAreaError.setText(errorListener.getOutput());
+        textAreaError.setText(errorListener.getOutput() + "Exceptions: "  + exceptionErrorStrategy.getErrors().toString());
 
 
     }

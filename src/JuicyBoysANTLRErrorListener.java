@@ -1,7 +1,4 @@
-import org.antlr.v4.runtime.ANTLRErrorListener;
-import org.antlr.v4.runtime.Parser;
-import org.antlr.v4.runtime.RecognitionException;
-import org.antlr.v4.runtime.Recognizer;
+import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.atn.ATNConfigSet;
 import org.antlr.v4.runtime.dfa.DFA;
 
@@ -22,14 +19,28 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
 
     @Override
     public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int lineNumber, int charPositionInLine, String msg, RecognitionException e) {
-        List<String> stack = ((Parser) recognizer).getRuleInvocationStack();
+
+        List<String> stack;
+
+    try {
+        //for parser
+        stack = ((Parser) recognizer).getRuleInvocationStack();
         Collections.reverse(stack);
+
+        output = output + "Rule stack: " + stack + "\n";
+    }catch (Exception e2){
+        //for lexer
+
+
+    }
+
+
+
         /*System.out.println("Rule stack: " + stack);
         System.out.println("You have a syntax error at line: " + i);
         System.out.println("At character position: " + i1);*/
 
-        output = "";
-        output = output + "Rule stack: " + stack + "\n";
+
         output = output + "You have a syntax error at line: " + lineNumber + "\n";
         output = output + "At character position: " + charPositionInLine;
         output = output + " \n \n Specific Error: " + msg.toString();
