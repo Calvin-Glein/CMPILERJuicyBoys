@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 
 import org.antlr.v4.runtime.*;
+=======
+import org.antlr.v4.runtime.ANTLRInputStream;
+import org.antlr.v4.runtime.CommonTokenStream;
+import org.antlr.v4.runtime.DiagnosticErrorListener;
+import org.antlr.v4.runtime.Token;
+>>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
 import org.antlr.v4.runtime.atn.PredictionMode;
 
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -68,15 +75,10 @@ public class UI {
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         JuicyBoysParser parser = new JuicyBoysParser(tokens);
         JuicyBoysANTLRErrorListener errorListener = new JuicyBoysANTLRErrorListener();
-        JuicyBoysDefaultErrorStrategy defaultErrorStrategy = new JuicyBoysDefaultErrorStrategy();
 
        // parser.removeErrorListeners();
         parser.addErrorListener(errorListener);
         //System.out.print(parser.getErrorListeners().get(0).syntaxError(errorListener.getRecognizer(), errorListener.getO(), errorListener.getI(), errorListener.getI1(), errorListener.getS(), errorListener.getE()));
-
-        //lets add the default error strategy
-        parser.setErrorHandler(defaultErrorStrategy);
-
 
 
         ParseTree tree = parser.start();
