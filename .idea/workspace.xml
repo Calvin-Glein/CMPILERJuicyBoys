@@ -4,6 +4,7 @@
     <list default="true" id="0d3ffeaa-f4e0-49a8-b31b-d4b8ee7d361a" name="Default" comment="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/JuicyBoysDefaultErrorStrategy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysANTLRErrorListener.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysANTLRErrorListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/UI$1.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/UI$1.class" />
@@ -73,6 +74,20 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMPILERJuicyBoys.iml" afterPath="$PROJECT_DIR$/CMPILERJuicyBoys.iml" />
 >>>>>>> d42cbc6f3dae8c1e6680c9c48eeb16dc10fd272f
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/TextLineNumber$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/TextLineNumber.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/UI.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysLexer.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysLexer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysWalker.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysWalker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoys.g4" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoys.g4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JuicyBoys.g4" afterPath="$PROJECT_DIR$/src/JuicyBoys.g4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java" afterPath="$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JuicyBoysLexer.java" afterPath="$PROJECT_DIR$/src/JuicyBoysLexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JuicyBoysParser.java" afterPath="$PROJECT_DIR$/src/JuicyBoysParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JuicyBoysWalker.java" afterPath="$PROJECT_DIR$/src/JuicyBoysWalker.java" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UI.java" afterPath="$PROJECT_DIR$/src/UI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -88,18 +103,22 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="UI.java" pinned="false" current-in-tab="false">
 =======
       <file leaf-file-name="UI.java" pinned="false" current-in-tab="true">
 >>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+=======
+      <file leaf-file-name="UI.java" pinned="false" current-in-tab="false">
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
         <entry file="file://$PROJECT_DIR$/src/UI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+            <state relative-caret-position="113">
+              <caret line="63" column="10" lean-forward="false" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#816#824#0" expanded="true" />
-                <element signature="e#922#930#0" expanded="true" />
+                <element signature="e#715#723#0" expanded="true" />
+                <element signature="e#821#829#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,9 +178,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JuicyBoysANTLRErrorListener.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JuicyBoysANTLRErrorListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="172">
               <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="48" />
@@ -180,6 +200,24 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#786#794#0" expanded="true" />
                 <element signature="e#892#900#0" expanded="true" />
+=======
+            <state relative-caret-position="273">
+              <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1316#1317#0" expanded="true" />
+                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="e#1377#1378#0" expanded="true" />
+                <element signature="e#1401#1402#0" expanded="true" />
+                <element signature="e#1426#1427#0" expanded="true" />
+                <element signature="e#1450#1451#0" expanded="true" />
+                <element signature="e#1476#1477#0" expanded="true" />
+                <element signature="e#1501#1502#0" expanded="true" />
+                <element signature="e#1529#1530#0" expanded="true" />
+                <element signature="e#1553#1554#0" expanded="true" />
+                <element signature="e#1595#1596#0" expanded="true" />
+                <element signature="e#1619#1620#0" expanded="true" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
               </folding>
             </state>
           </provider>
@@ -326,11 +364,12 @@
         <option value="$PROJECT_DIR$/src/JuicyBoysWalker.java" />
         <option value="$PROJECT_DIR$/../../antlr-4.7-complete.jar!/org/antlr/v4/runtime/Parser.class" />
         <option value="$PROJECT_DIR$/src/JuicyBoys.g4" />
-        <option value="$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java" />
         <option value="$PROJECT_DIR$/src/UI.java" />
+        <option value="$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java" />
       </list>
     </option>
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
@@ -348,6 +387,13 @@
     <option name="width" value="1938" />
     <option name="height" value="1048" />
 >>>>>>> d42cbc6f3dae8c1e6680c9c48eeb16dc10fd272f
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -681,6 +727,7 @@
   <component name="ToolWindowManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
 =======
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -688,11 +735,15 @@
 =======
     <frame x="10" y="0" width="1346" height="775" extended-state="0" />
 >>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+=======
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42011833" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
@@ -703,11 +754,15 @@
 =======
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42578712" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
 >>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+=======
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4260355" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53698224" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19822486" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
@@ -717,11 +772,15 @@
 =======
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1994003" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
 >>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19674556" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19253294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -730,6 +789,10 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19774435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.256391" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
 >>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19253294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19739583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1124,6 +1187,7 @@
             <element signature="imports" expanded="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#666#674#0" expanded="true" />
             <element signature="e#772#780#0" expanded="true" />
 =======
@@ -1134,6 +1198,10 @@
             <element signature="e#816#824#0" expanded="true" />
             <element signature="e#922#930#0" expanded="true" />
 >>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+=======
+            <element signature="e#715#723#0" expanded="true" />
+            <element signature="e#821#829#0" expanded="true" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
           </folding>
         </state>
       </provider>
@@ -1436,6 +1504,7 @@
             <element signature="imports" expanded="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#666#674#0" expanded="true" />
             <element signature="e#772#780#0" expanded="true" />
 =======
@@ -1446,6 +1515,10 @@
             <element signature="e#816#824#0" expanded="true" />
             <element signature="e#922#930#0" expanded="true" />
 >>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+=======
+            <element signature="e#715#723#0" expanded="true" />
+            <element signature="e#821#829#0" expanded="true" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
           </folding>
         </state>
       </provider>
@@ -1763,6 +1836,7 @@
             <element signature="imports" expanded="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#666#674#0" expanded="true" />
             <element signature="e#772#780#0" expanded="true" />
 =======
@@ -1773,6 +1847,10 @@
             <element signature="e#816#824#0" expanded="true" />
             <element signature="e#922#930#0" expanded="true" />
 >>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+=======
+            <element signature="e#715#723#0" expanded="true" />
+            <element signature="e#821#829#0" expanded="true" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
           </folding>
         </state>
       </provider>
@@ -2070,6 +2148,7 @@
             <element signature="imports" expanded="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#666#674#0" expanded="true" />
             <element signature="e#772#780#0" expanded="true" />
 =======
@@ -2080,6 +2159,10 @@
             <element signature="e#816#824#0" expanded="true" />
             <element signature="e#922#930#0" expanded="true" />
 >>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+=======
+            <element signature="e#715#723#0" expanded="true" />
+            <element signature="e#821#829#0" expanded="true" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
           </folding>
         </state>
       </provider>
@@ -2101,6 +2184,7 @@
             <element signature="imports" expanded="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#666#674#0" expanded="true" />
             <element signature="e#772#780#0" expanded="true" />
 =======
@@ -2111,6 +2195,10 @@
             <element signature="e#816#824#0" expanded="true" />
             <element signature="e#922#930#0" expanded="true" />
 >>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+=======
+            <element signature="e#715#723#0" expanded="true" />
+            <element signature="e#821#829#0" expanded="true" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
           </folding>
         </state>
       </provider>
@@ -2482,12 +2570,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JuicyBoysWalker.java">
+    <entry file="file://$PROJECT_DIR$/src/UI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="21" column="5" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="113">
+          <caret line="63" column="10" lean-forward="false" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#715#723#0" expanded="true" />
+            <element signature="e#821#829#0" expanded="true" />
           </folding>
 =======
     <entry file="jar://$PROJECT_DIR$/../../antlr-4.7-complete.jar!/org/antlr/v4/runtime/Parser.class" />
@@ -2519,8 +2609,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java">
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoysWalker.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="238">
@@ -2533,6 +2624,10 @@
         <state relative-caret-position="45">
           <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
 >>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+=======
+        <state relative-caret-position="313">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="21" selection-end-column="5" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
           <folding>
             <element signature="e#1579#1580#0" expanded="false" />
             <element signature="e#1608#1609#0" expanded="false" />
@@ -2542,15 +2637,20 @@
     </entry>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/JuicyBoysDefaultErrorStrategy.java">
 =======
     <entry file="file://$PROJECT_DIR$/src/UI.java">
 >>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+=======
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java">
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+        <state relative-caret-position="273">
+          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     <entry file="file://$PROJECT_DIR$/src/TextLineNumber.java">
@@ -2579,6 +2679,20 @@
             <element signature="e#816#824#0" expanded="true" />
             <element signature="e#922#930#0" expanded="true" />
 >>>>>>> parent of 8c5298e... Trying to implement defaulterrorstrategy
+=======
+            <element signature="e#1316#1317#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1377#1378#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="true" />
+            <element signature="e#1426#1427#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+            <element signature="e#1476#1477#0" expanded="true" />
+            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="e#1595#1596#0" expanded="true" />
+            <element signature="e#1619#1620#0" expanded="true" />
+>>>>>>> parent of 829c134... Added dialogbox sa JuicyboysANTLRErrorListener
           </folding>
         </state>
       </provider>
