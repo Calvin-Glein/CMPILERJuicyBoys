@@ -1,7 +1,4 @@
-import org.antlr.v4.runtime.ANTLRInputStream;
-import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.DiagnosticErrorListener;
-import org.antlr.v4.runtime.Token;
+import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.atn.PredictionMode;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
@@ -60,6 +57,7 @@ public class UI {
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         JuicyBoysParser parser = new JuicyBoysParser(tokens);
         JuicyBoysANTLRErrorListener errorListener = new JuicyBoysANTLRErrorListener();
+        JuicyBoysDefaultErrorStrategy defaultErrorStrategy = new JuicyBoysDefaultErrorStrategy();
 
 
        // parser.removeErrorListeners();
@@ -71,6 +69,10 @@ public class UI {
         //make the parser report all ambiguities
         parser.getInterpreter()
                 .setPredictionMode(PredictionMode.LL_EXACT_AMBIG_DETECTION);
+
+        //lets add the default error strategy
+        parser.setErrorHandler(defaultErrorStrategy);
+
 
 
         ParseTree tree = parser.start();

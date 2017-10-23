@@ -43,9 +43,6 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
     }
 
 
-
-
-
     public String getOutput(){
         return output;
     }
