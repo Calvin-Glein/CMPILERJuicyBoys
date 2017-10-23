@@ -1,12 +1,11 @@
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.DiagnosticErrorListener;
 import org.antlr.v4.runtime.Token;
-import org.antlr.v4.runtime.atn.PredictionMode;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 import javax.swing.*;
+import javax.xml.soap.Text;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -20,6 +19,7 @@ public class UI {
     private JTextArea textAreaTree;
     public JTextArea textAreaError;
     private JScrollPane scrollPaneCodeInput;
+    private TextLineNumber textLineNumber;
 
     private ArrayList<String> TokenTypes= new ArrayList<String>();
 
@@ -33,6 +33,9 @@ public class UI {
                 run();
             }
         });
+
+        textLineNumber = new TextLineNumber(textAreaCodeInput);
+        scrollPaneCodeInput.setRowHeaderView(textLineNumber);
     }
 
     public void initializeUI(){
@@ -61,16 +64,9 @@ public class UI {
         JuicyBoysParser parser = new JuicyBoysParser(tokens);
         JuicyBoysANTLRErrorListener errorListener = new JuicyBoysANTLRErrorListener();
 
-
        // parser.removeErrorListeners();
         parser.addErrorListener(errorListener);
-
-        //lets the parser display ambiguity
-        parser.addErrorListener(new DiagnosticErrorListener());
-
-        //make the parser report all ambiguities
-        parser.getInterpreter()
-                .setPredictionMode(PredictionMode.LL_EXACT_AMBIG_DETECTION);
+        //System.out.print(parser.getErrorListeners().get(0).syntaxError(errorListener.getRecognizer(), errorListener.getO(), errorListener.getI(), errorListener.getI1(), errorListener.getS(), errorListener.getE()));
 
 
         ParseTree tree = parser.start();

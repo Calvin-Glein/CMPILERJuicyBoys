@@ -11,6 +11,7 @@
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../antlr-4.7-complete.jar!/" />
+          <root url="jar://C:/Javalib/antlr-4.7-complete.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
