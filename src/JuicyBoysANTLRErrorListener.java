@@ -5,6 +5,8 @@ import org.antlr.v4.runtime.Recognizer;
 import org.antlr.v4.runtime.atn.ATNConfigSet;
 import org.antlr.v4.runtime.dfa.DFA;
 
+import javax.swing.*;
+import java.awt.*;
 import java.util.BitSet;
 import java.util.Collection;
 import java.util.Collections;
@@ -19,7 +21,7 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
 
 
     @Override
-    public void syntaxError(Recognizer<?, ?> recognizer, Object o, int i, int i1, String s, RecognitionException e) {
+    public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int lineNumber, int charPositionInLine, String msg, RecognitionException e) {
         List<String> stack = ((Parser) recognizer).getRuleInvocationStack();
         Collections.reverse(stack);
         /*System.out.println("Rule stack: " + stack);
@@ -28,10 +30,20 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
 
         output = "";
         output = output + "Rule stack: " + stack + "\n";
-        output = output + "You have a syntax error at line: " + i + "\n";
-        output = output + "At character position: " + i1;
-        output = output + " \n \n Specific Error: " + s;
+        output = output + "You have a syntax error at line: " + lineNumber + "\n";
+        output = output + "At character position: " + charPositionInLine;
+        output = output + " \n \n Specific Error: " + msg;
 
+
+        JDialog dialog = new JDialog();
+        Container contentPane = dialog.getContentPane();
+        contentPane.add(new JLabel(msg.toString()));
+        contentPane.setBackground(Color.white);
+        dialog.setTitle("Syntax error");
+        dialog.pack();
+        dialog.setLocationRelativeTo(null);
+        dialog.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        dialog.setVisible(true);
     }
 
     public Recognizer<?, ?> getRecognizer() {
