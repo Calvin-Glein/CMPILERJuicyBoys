@@ -4,6 +4,10 @@
     <list default="true" id="0d3ffeaa-f4e0-49a8-b31b-d4b8ee7d361a" name="Default" comment="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/UI$BailSimpleLexer.class" afterPath="" />
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/ExceptionErrorStrategy.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/ExceptionErrorStrategy.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysANTLRErrorListener.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysANTLRErrorListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysANTLRErrorStrategy.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysANTLRErrorStrategy.class" />
@@ -17,6 +21,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JuicyBoysANTLRErrorStrategy.java" afterPath="$PROJECT_DIR$/src/JuicyBoysANTLRErrorStrategy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TextLineNumber.java" afterPath="$PROJECT_DIR$/src/TextLineNumber.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UI.form" afterPath="$PROJECT_DIR$/src/UI.form" />
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -63,6 +68,8 @@
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UI.java" afterPath="$PROJECT_DIR$/src/UI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -87,8 +94,13 @@
       </file>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="ExceptionErrorStrategy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ExceptionErrorStrategy.java">
+=======
+      <file leaf-file-name="JuicyBoysBaseListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JuicyBoysBaseListener.java">
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
               <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
@@ -100,6 +112,7 @@
       <file leaf-file-name="UI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="204">
               <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
@@ -115,11 +128,39 @@
 =======
       <file leaf-file-name="UI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI.java">
+=======
+            <state relative-caret-position="357">
+              <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1083#1084#0" expanded="true" />
+                <element signature="e#1120#1121#0" expanded="true" />
+                <marker date="1508873056624" expanded="false" signature="812:820" ph="&lt;~&gt;" />
+                <marker date="1508873056624" expanded="false" signature="918:926" ph="&lt;~&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextLineNumber.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TextLineNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="264" column="0" lean-forward="false" selection-start-line="259" selection-start-column="16" selection-end-line="264" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JuicyBoysANTLRErrorStrategy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JuicyBoysANTLRErrorStrategy.java">
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="205">
               <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+<<<<<<< HEAD
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
                 <element signature="e#1083#1084#0" expanded="true" />
                 <element signature="e#1120#1121#0" expanded="true" />
@@ -131,6 +172,8 @@
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
               </folding>
             </state>
           </provider>
@@ -138,6 +181,9 @@
       </file>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
       <file leaf-file-name="JuicyBoys.tokens" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JuicyBoys.tokens">
           <provider selected="true" editor-type-id="text-editor">
@@ -161,6 +207,7 @@
       <file leaf-file-name="JuicyBoys.g4" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JuicyBoys.g4">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="93">
               <caret line="103" column="36" lean-forward="false" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
 =======
@@ -177,6 +224,10 @@
             <state relative-caret-position="127">
               <caret line="222" column="38" lean-forward="false" selection-start-line="222" selection-start-column="38" selection-end-line="222" selection-end-column="38" />
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+            <state relative-caret-position="68">
+              <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
               <folding />
             </state>
           </provider>
@@ -189,23 +240,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JuicyBoysANTLRErrorStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JuicyBoysANTLRErrorStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="JuicyBoysWalker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JuicyBoysWalker.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="85">
@@ -218,6 +256,10 @@
             <state relative-caret-position="136">
               <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -225,6 +267,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="JuicyBoysBaseListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JuicyBoysBaseListener.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -279,6 +322,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -290,6 +335,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< HEAD
       <find>start</find>
       <find>they get called naman</find>
       <find>rec</find>
@@ -308,18 +354,43 @@
       <find>_</find>
       <find>variable_id</find>
       <find>not_op</find>
+=======
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
       <find>var_dec</find>
       <find>expre</find>
       <find>var_decl</find>
       <find>array</find>
       <find>assign</find>
       <find>output_funct</find>
-      <find>input</find>
-      <find>boyd simula () { numero baryabol counter ;istop }</find>
       <find>isulat</find>
       <find>output</find>
+<<<<<<< HEAD
       <find>statement</find>
       <find>string_literal</find>
+=======
+      <find>string_literal</find>
+      <find>function</find>
+      <find>operator</find>
+      <find>num_factor</find>
+      <find>return_keyword</find>
+      <find>return</find>
+      <find>ex</find>
+      <find>expression</find>
+      <find>statement_l</find>
+      <find>statement</find>
+      <find>function_</find>
+      <find>;</find>
+      <find>lutang</find>
+      <find>vardec</find>
+      <find>input</find>
+      <find>input</find>
+      <find>vardecl</find>
+      <find>string</find>
+      <find>for_loop</find>
+      <find>boyd simula () { numero baryabol counter ;istop }</find>
+      <find>isCUrr</find>
+      <find>for_state</find>
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
     </findStrings>
     <replaceStrings>
       <replace>// System</replace>
@@ -354,12 +425,19 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/ExceptionErrorStrategy.java" />
         <option value="$PROJECT_DIR$/src/JuicyBoysANTLRErrorStrategy.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/JuicyBoysBaseListener.java" />
         <option value="$PROJECT_DIR$/src/JuicyBoysWalker.java" />
+=======
+        <option value="$PROJECT_DIR$/src/TextLineNumber.java" />
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
         <option value="$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java" />
         <option value="$PROJECT_DIR$/src/UI.form" />
         <option value="$PROJECT_DIR$/src/UI.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/JuicyBoys.g4" />
+=======
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
       </list>
     </option>
   </component>
@@ -410,6 +488,11 @@
             <path>
               <item name="CMPILERJuicyBoys" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="CMPILERJuicyBoys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="antlr-4.7-complete.jar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -574,6 +657,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4876161" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
 =======
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
@@ -581,6 +665,9 @@
 =======
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33126935" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -622,17 +709,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39940828" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42569658" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29256967" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19253294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19253294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -648,19 +735,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/JuicyBoysLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="110" column="13" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding>
-            <element signature="e#5674#5675#0" expanded="false" />
-            <element signature="e#5698#5699#0" expanded="false" />
-            <element signature="e#5748#5749#0" expanded="false" />
-            <element signature="e#5772#5773#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JuicyBoysLexer.tokens">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -712,6 +786,7 @@
             <element signature="imports" expanded="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -725,6 +800,12 @@
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <marker date="1508873056624" expanded="false" signature="812:820" ph="&lt;~&gt;" />
+            <marker date="1508873056624" expanded="false" signature="918:926" ph="&lt;~&gt;" />
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
           </folding>
         </state>
       </provider>
@@ -768,6 +849,7 @@
             <element signature="imports" expanded="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -781,6 +863,12 @@
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <marker date="1508873056624" expanded="false" signature="812:820" ph="&lt;~&gt;" />
+            <marker date="1508873056624" expanded="false" signature="918:926" ph="&lt;~&gt;" />
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
           </folding>
         </state>
       </provider>
@@ -802,6 +890,7 @@
             <element signature="imports" expanded="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -815,6 +904,12 @@
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <marker date="1508873056624" expanded="false" signature="812:820" ph="&lt;~&gt;" />
+            <marker date="1508873056624" expanded="false" signature="918:926" ph="&lt;~&gt;" />
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
           </folding>
         </state>
       </provider>
@@ -853,14 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="49" column="72" lean-forward="false" selection-start-line="49" selection-start-column="72" selection-end-line="49" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JuicyBoys.tokens">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -925,14 +1012,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JuicyBoysParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="1084" column="21" lean-forward="true" selection-start-line="1084" selection-start-column="21" selection-end-line="1084" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../antlr-4.7-complete.jar!/org/antlr/v4/runtime/ANTLRErrorStrategy.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -976,21 +1055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExceptionErrorStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="61" column="15" lean-forward="false" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#514#522#0" expanded="false" />
-            <element signature="e#572#573#0" expanded="false" />
-            <element signature="e#600#601#0" expanded="false" />
-            <element signature="e#632#633#0" expanded="false" />
-            <element signature="e#667#668#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../antlr-4.7-complete.jar!/org/antlr/v4/runtime/tree/ErrorNode.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1007,6 +1071,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JuicyBoysBaseListener.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="284">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1019,6 +1084,11 @@
             <marker date="1508845433939" expanded="true" signature="17105:17106" ph="{}" />
           </folding>
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+        <state relative-caret-position="135">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
         </state>
       </provider>
     </entry>
@@ -1029,7 +1099,11 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/JuicyBoysWalker.java">
+=======
+    <entry file="jar://$PROJECT_DIR$/../../antlr-4.7-complete.jar!/org/antlr/v4/runtime/tree/ParseTreeWalker.class">
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
@@ -1039,6 +1113,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/JuicyBoysWalker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1050,6 +1125,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoys.tokens">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoysWalker.java">
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="65" column="34" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="65" selection-end-column="34" />
@@ -1066,7 +1152,11 @@
     </entry>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="jar://$PROJECT_DIR$/../../antlr-4.7-complete.jar!/org/antlr/v4/runtime/CommonTokenStream.class">
+=======
+    <entry file="file://$PROJECT_DIR$/src/TextLineNumber.java">
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
@@ -1082,11 +1172,15 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
     <entry file="jar://$PROJECT_DIR$/../../antlr-4.7-complete.jar!/org/antlr/v4/runtime/tree/ParseTreeWalker.class">
+=======
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoysANTLRErrorStrategy.java">
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
@@ -1096,6 +1190,9 @@
     </entry>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
     <entry file="file://$PROJECT_DIR$/src/ExceptionErrorStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1119,6 +1216,7 @@
 =======
     <entry file="file://$PROJECT_DIR$/src/UI.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="205">
           <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -1128,14 +1226,23 @@
         <state relative-caret-position="205">
           <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+        <state relative-caret-position="357">
+          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1083#1084#0" expanded="true" />
             <element signature="e#1120#1121#0" expanded="true" />
+<<<<<<< HEAD
             <element signature="e#1842#1843#0" expanded="true" />
             <element signature="e#1907#1908#0" expanded="true" />
             <marker date="1508845299952" expanded="false" signature="812:820" ph="&lt;~&gt;" />
             <marker date="1508845299952" expanded="false" signature="918:926" ph="&lt;~&gt;" />
+=======
+            <marker date="1508873056624" expanded="false" signature="812:820" ph="&lt;~&gt;" />
+            <marker date="1508873056624" expanded="false" signature="918:926" ph="&lt;~&gt;" />
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
           </folding>
         </state>
       </provider>
@@ -1144,11 +1251,17 @@
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="204">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+=======
+        <state relative-caret-position="1986">
+          <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+<<<<<<< HEAD
         </state>
       </provider>
     </entry>
@@ -1165,6 +1278,8 @@
           <caret line="222" column="38" lean-forward="false" selection-start-line="222" selection-start-column="38" selection-end-line="222" selection-end-column="38" />
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
           <folding />
+=======
+>>>>>>> parent of 14d2c07... Revert "Working parser test case 1,2,3 only if tama sila"
         </state>
       </provider>
     </entry>
