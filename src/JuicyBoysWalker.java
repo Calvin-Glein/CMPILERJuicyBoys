@@ -3,65 +3,6 @@ import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 public class JuicyBoysWalker implements JuicyBoysListener {
-    @Override
-    public void enterFunctiondec_vardecl(JuicyBoysParser.Functiondec_vardeclContext ctx) {
-
-    }
-
-    @Override
-    public void exitFunctiondec_vardecl(JuicyBoysParser.Functiondec_vardeclContext ctx) {
-
-    }
-
-    @Override
-    public void enterFunctioncall_vardecl(JuicyBoysParser.Functioncall_vardeclContext ctx) {
-
-    }
-
-    @Override
-    public void exitFunctioncall_vardecl(JuicyBoysParser.Functioncall_vardeclContext ctx) {
-
-    }
-
-    @Override
-    public void enterOperator(JuicyBoysParser.OperatorContext ctx) {
-
-    }
-
-    @Override
-    public void exitOperator(JuicyBoysParser.OperatorContext ctx) {
-
-    }
-
-    @Override
-    public void enterSpecial_operator(JuicyBoysParser.Special_operatorContext ctx) {
-
-    }
-
-    @Override
-    public void exitSpecial_operator(JuicyBoysParser.Special_operatorContext ctx) {
-
-    }
-
-    @Override
-    public void enterDouble_sign_operator(JuicyBoysParser.Double_sign_operatorContext ctx) {
-
-    }
-
-    @Override
-    public void exitDouble_sign_operator(JuicyBoysParser.Double_sign_operatorContext ctx) {
-
-    }
-
-    @Override
-    public void enterLiterals(JuicyBoysParser.LiteralsContext ctx) {
-
-    }
-
-    @Override
-    public void exitLiterals(JuicyBoysParser.LiteralsContext ctx) {
-
-    }
 
     @Override
     public void enterArray(JuicyBoysParser.ArrayContext ctx) {

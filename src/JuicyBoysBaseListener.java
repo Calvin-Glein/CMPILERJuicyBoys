@@ -135,30 +135,6 @@ public class JuicyBoysBaseListener implements JuicyBoysListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFunctiondec_vardecl(JuicyBoysParser.Functiondec_vardeclContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFunctiondec_vardecl(JuicyBoysParser.Functiondec_vardeclContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterFunctioncall_vardecl(JuicyBoysParser.Functioncall_vardeclContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFunctioncall_vardecl(JuicyBoysParser.Functioncall_vardeclContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterVar_decl(JuicyBoysParser.Var_declContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -214,42 +190,6 @@ public class JuicyBoysBaseListener implements JuicyBoysListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitStatement(JuicyBoysParser.StatementContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterOperator(JuicyBoysParser.OperatorContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitOperator(JuicyBoysParser.OperatorContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSpecial_operator(JuicyBoysParser.Special_operatorContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSpecial_operator(JuicyBoysParser.Special_operatorContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterDouble_sign_operator(JuicyBoysParser.Double_sign_operatorContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitDouble_sign_operator(JuicyBoysParser.Double_sign_operatorContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -382,18 +322,6 @@ public class JuicyBoysBaseListener implements JuicyBoysListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitStatement_list(JuicyBoysParser.Statement_listContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterLiterals(JuicyBoysParser.LiteralsContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitLiterals(JuicyBoysParser.LiteralsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

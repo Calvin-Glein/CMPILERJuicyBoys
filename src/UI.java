@@ -44,10 +44,9 @@ public class UI {
         JFrame frame = new JFrame("IDE");
         frame.setContentPane(new UI().panel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
-
         frame.pack();
         frame.setVisible(true);
+        frame.setSize(500, 500);
 
     }
 

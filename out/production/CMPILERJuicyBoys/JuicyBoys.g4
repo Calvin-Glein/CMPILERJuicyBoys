@@ -6,15 +6,14 @@ start           	: (constdecl_list)? (funcdecl_list)? main_function
 //Productions for function declaration
 
 funcdecl_list     	: function_declaration funcdecl_list
-                    | function_declaration
                     	;
 function_declaration 	: function_return
 	                    | function_noreturn
 	                    ;
-function_return   	: data_type FUNCTION_IDENTIFIER OPEN_PAR functiondec_vardecl CLOSE_PAR function_content
+function_return   	: data_type FUNCTION_IDENTIFIER OPEN_PAR parameter_list CLOSE_PAR function_content
                     | data_type FUNCTION_IDENTIFIER OPEN_PAR CLOSE_PAR function_content
                     ;
-function_noreturn 	: VOID_KEYWORD FUNCTION_IDENTIFIER OPEN_PAR functiondec_vardecl CLOSE_PAR function_content
+function_noreturn 	: VOID_KEYWORD FUNCTION_IDENTIFIER OPEN_PAR parameter_list CLOSE_PAR function_content
                     | VOID_KEYWORD FUNCTION_IDENTIFIER OPEN_PAR CLOSE_PAR function_content
                     ;
 parameter_list    	: parameters
@@ -29,17 +28,9 @@ main_function     	: VOID_KEYWORD MAIN_KEYWORD OPEN_PAR CLOSE_PAR (function_cont
 
 //Productions for variable declaration
 
-vardecl_list      	: var_decl ASSIGNMENT_OPERATOR expression TERMINATOR (vardecl_list)?
-                    | input TERMINATOR (vardecl_list)?
+vardecl_list      	: var_decl ASSIGNMENT_OPERATOR expression TERMINATOR vardecl_list
                     | var_decl TERMINATOR
                     ;
-functiondec_vardecl    : var_decl COMMA functiondec_vardecl
-                        | var_decl
-                        ;
-
-functioncall_vardecl    : identifier_list
-                        ;
-
 var_decl          	: data_type identifier_list
                     | array
                     ;
@@ -71,41 +62,23 @@ statement         	    : assignment_statement TERMINATOR
                     	| output
                         ;
 
-operator                : ADDITION_OPERATOR
-                        | SUBTRACTION_OPERATOR
-                        | MULTIPLICATION_OPERATOR
-                        | DIVISION_OPERATOR
-                        | MODULO_OPERATOR
-                        ;
-
-special_operator        : PLUS_EQUAL_OPERATOR
-                        | MINUS_EQUAL_OPERATOR
-                        | DIVIDE_EQUAL_OPERATOR
-                        | TIMES_EQUAL_OPERATOR
-                        | MODULO_EQUAL_OPERATOR
-                        ;
-
-double_sign_operator    : INCREMENTAL_OPERATOR
-                        | DECREMENTAL_OPERATOR
-                        ;
-
 assignment_statement 	: VARIABLE_IDENTIFIER ASSIGNMENT_OPERATOR expression
                         | VARIABLE_IDENTIFIER ASSIGNMENT_OPERATOR input
-                        | VARIABLE_IDENTIFIER double_sign_operator
-                        | VARIABLE_IDENTIFIER special_operator expression
+                        | VARIABLE_IDENTIFIER INCREMENTAL_OPERATOR
+                        | VARIABLE_IDENTIFIER DECREMENTAL_OPERATOR
                         ;
 funccall_statement  	: FUNCTION_IDENTIFIER OPEN_PAR actual_parameter_list CLOSE_PAR TERMINATOR
                         | FUNCTION_IDENTIFIER OPEN_PAR CLOSE_PAR TERMINATOR
                         ;
 actual_parameter_list	: actual_params
                         ;
-actual_params     	: funccall_statement (multiple_actual_parameters)?
-                        | VARIABLE_IDENTIFIER (multiple_actual_parameters)?
-                    	| INTEGER_LITERAL  (multiple_actual_parameters)?
-                        | FLOAT_LITERAL (multiple_actual_parameters)?
-                        | CHAR_LITERAL (multiple_actual_parameters)?
-                        | STRING_LITERAL (multiple_actual_parameters)?
-                        | expression (multiple_actual_parameters)?
+actual_params     	: funccall_statement multiple_actual_parameters
+                        | VARIABLE_IDENTIFIER multiple_actual_parameters
+                    	| INTEGER_LITERAL  multiple_actual_parameters
+                        | FLOAT_LITERAL multiple_actual_parameters
+                        | CHAR_LITERAL multiple_actual_parameters
+                        | STRING_LITERAL multiple_actual_parameters
+                        | expression multiple_actual_parameters
                         ;
 multiple_actual_parameters	: COMMA actual_params
                         ;
@@ -127,27 +100,15 @@ statement_list    	    : statement statement_list
 
 //Productions for expressions
 
-literals                : INTEGER_LITERAL
-                        | STRING_LITERAL
-                        | CHAR_LITERAL
-                        | FLOAT_LITERAL
-                        | TRUE_LITERAL
-                        | FALSE_LITERAL
-                        ;
-
-expression        	    : VARIABLE_IDENTIFIER
-                        | literals
+expression        	    : string_expression
+                    	| num_expression
+                    	| bool_expression
                     	| NOT_operator OPEN_PAR expression CLOSE_PAR
-                    	| expression operator expression
                     	| expression rel_op expression
-                    	| expression special_operator expression
                     	| FUNCTION_IDENTIFIER OPEN_PAR actual_parameter_list CLOSE_PAR
                     	| FUNCTION_IDENTIFIER OPEN_PAR CLOSE_PAR
                     	| OPEN_PAR expression CLOSE_PAR
-                    	| OPEN_PAR expression CLOSE_PAR expression
                         ;
-
-
 string_expression 	    : VARIABLE_IDENTIFIER ADDITION_OPERATOR string_expression
                     	| STRING_LITERAL ADDITION_OPERATOR string_expression
                     	| VARIABLE_IDENTIFIER
@@ -238,9 +199,8 @@ output_list	        : expression
                         | funccall_statement
                         | STRING_LITERAL
                         ;
-input	                : VARIABLE_IDENTIFIER ASSIGNMENT_OPERATOR INPUT_FUNCTION OPEN_PAR input_list CLOSE_PAR
+input	                : VARIABLE_IDENTIFIER ASSIGNMENT_OPERATOR INPUT_FUNCTION input_list
                         | INPUT_FUNCTION OPEN_PAR CLOSE_PAR
-
                         ;
 input_list	        : INTEGER_LITERAL
                         | STRING_LITERAL
@@ -258,9 +218,9 @@ INTEGER_LITERAL              	: [0-9]+
                         ;
 CHAR_LITERAL	: QUOTE1 [0-9a-zA-Z] QUOTE1
                         ;
-FLOAT_LITERAL	: [0-9]+'.'[0-9]+
+FLOAT_LITERAL	: [0-9]+'.'[0-9]+(('E' | 'e')'-'?[0-9]+)?
                         ;
-STRING_LITERAL	: QUOTE2 [ A-Za-z0-9!:.]* QUOTE2
+STRING_LITERAL	: QUOTE2 [ A-Za-z0-9!:]* QUOTE2
                         ;
 VARIABLE_IDENTIFIER	: 'baryabol ' [A-Za-z_]+[0-9]*
                         ;
