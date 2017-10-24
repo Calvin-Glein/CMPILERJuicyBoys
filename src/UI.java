@@ -134,7 +134,6 @@ public class UI {
         viewr.setScale(1.5);//scale a little
         panelTree.add(viewr);
         frameTree.add(scrollPanePanelTree);
-        frameTree.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frameTree.setSize(200,200);
         frameTree.setVisible(true);
 

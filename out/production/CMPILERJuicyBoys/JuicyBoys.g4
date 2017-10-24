@@ -63,6 +63,7 @@ statement         	    : assignment_statement TERMINATOR
                         ;
 
 assignment_statement 	: VARIABLE_IDENTIFIER ASSIGNMENT_OPERATOR expression
+                        | VARIABLE_IDENTIFIER ASSIGNMENT_OPERATOR input
                         | VARIABLE_IDENTIFIER INCREMENTAL_OPERATOR
                         | VARIABLE_IDENTIFIER DECREMENTAL_OPERATOR
                         ;
@@ -198,7 +199,8 @@ output_list	        : expression
                         | funccall_statement
                         | STRING_LITERAL
                         ;
-input	                : VARIABLE_IDENTIFIER ASSIGNMENT_OPERATOR INPUT_FUNCTION input_list TERMINATOR
+input	                : VARIABLE_IDENTIFIER ASSIGNMENT_OPERATOR INPUT_FUNCTION input_list
+                        | INPUT_FUNCTION OPEN_PAR CLOSE_PAR
                         ;
 input_list	        : INTEGER_LITERAL
                         | STRING_LITERAL
@@ -218,7 +220,7 @@ CHAR_LITERAL	: QUOTE1 [0-9a-zA-Z] QUOTE1
                         ;
 FLOAT_LITERAL	: [0-9]+'.'[0-9]+(('E' | 'e')'-'?[0-9]+)?
                         ;
-STRING_LITERAL	: QUOTE2 [ A-Za-z0-9!]* QUOTE2
+STRING_LITERAL	: QUOTE2 [ A-Za-z0-9!:]* QUOTE2
                         ;
 VARIABLE_IDENTIFIER	: 'baryabol ' [A-Za-z_]+[0-9]*
                         ;
