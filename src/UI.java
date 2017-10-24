@@ -107,10 +107,11 @@ public class UI {
        // parser.setErrorHandler(defaultErrorStrategy);
 
         //add Exceptionerrorstrategy in the parser
-       // parser.setErrorHandler(exceptionErrorStrategy);
+        // parser.setErrorHandler(exceptionErrorStrategy);
 
         //add a custom handler
       //  parser.setErrorHandler(new JuicyBoysANTLRErrorStrategy());
+
 
         ParseTree tree = parser.start();
 
@@ -143,6 +144,11 @@ public class UI {
         textAreaExceptions.setText("Exceptions: "  + exceptionErrorStrategy.getErrors().toString());
 
         System.out.println("Parser: " + parser.getNumberOfSyntaxErrors());
+
+        if(errorListener.getLineErrors().size()>0){
+            textAreaCodeInput.setCaretPosition(errorListener.getLineErrors().get(0));
+        }
+
 
     }
 }

@@ -17,6 +17,9 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
     ArrayList<Integer> lineErrors = new ArrayList<Integer>();
 
 
+    public ArrayList<Integer> getLineErrors(){
+        return lineErrors;
+    }
     @Override
     public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int lineNumber, int charPositionInLine, String msg, RecognitionException e) {
 
