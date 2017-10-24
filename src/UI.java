@@ -84,7 +84,7 @@ public class UI {
         parser.removeErrorListeners();
 
         //add our custom errorListener
-       // parser.addErrorListener(errorListener);
+        parser.addErrorListener(errorListener);
 
 
         //remove lexer errorlistener
@@ -94,11 +94,10 @@ public class UI {
 
 
 
-        parser.addErrorListener(new DiagnosticErrorListener());
+    //    parser.addErrorListener(new DiagnosticErrorListener());
 
         //make parser report all ambiguities
-        parser.getInterpreter()
-                .setPredictionMode(PredictionMode.LL_EXACT_AMBIG_DETECTION);
+      //  parser.getInterpreter().setPredictionMode(PredictionMode.LL_EXACT_AMBIG_DETECTION);
 
 
         //add the bailerrorstrategy
@@ -108,7 +107,7 @@ public class UI {
        // parser.setErrorHandler(defaultErrorStrategy);
 
         //add Exceptionerrorstrategy in the parser
-        parser.setErrorHandler(exceptionErrorStrategy);
+       // parser.setErrorHandler(exceptionErrorStrategy);
 
         //add a custom handler
       //  parser.setErrorHandler(new JuicyBoysANTLRErrorStrategy());
@@ -142,6 +141,8 @@ public class UI {
         textAreaTree.setText(tree.toStringTree(parser));
         textAreaError.setText(errorListener.getOutput());
         textAreaExceptions.setText("Exceptions: "  + exceptionErrorStrategy.getErrors().toString());
+
+        System.out.println("Parser: " + parser.getNumberOfSyntaxErrors());
 
     }
 }

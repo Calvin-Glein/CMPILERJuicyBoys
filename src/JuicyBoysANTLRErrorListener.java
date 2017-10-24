@@ -4,9 +4,7 @@ import org.antlr.v4.runtime.dfa.DFA;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.BitSet;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
 import java.util.List;
 
 public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
@@ -16,12 +14,14 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
     Object o;
     int i; int i1; String s; RecognitionException e;
 
+    ArrayList<Integer> lineErrors = new ArrayList<Integer>();
+
 
     @Override
     public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int lineNumber, int charPositionInLine, String msg, RecognitionException e) {
 
         List<String> stack;
-
+/*
     try {
         //for parser
         stack = ((Parser) recognizer).getRuleInvocationStack();
@@ -37,6 +37,7 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
     }catch (Exception e2){
         //for lexer
 
+        stack = ((Lexer) recognizer).getRuleInvocationStack();
 
         output = output + "Lexer Error: ";
         output = output + "\n You have a syntax error at line: " + lineNumber + "\n";
@@ -45,6 +46,18 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
 
 
     }
+    */
+
+
+if(!lineErrors.contains(lineNumber)){
+    output = output + "Error: ";
+    output = output + "\n You have a syntax error at line: " + lineNumber + "\n";
+    output = output + "At character position: " + charPositionInLine;
+    output = output + " \n \n Specific Error: " + msg.toString() + "\n\n ";
+
+    lineErrors.add(lineNumber);
+
+}
 
 
 
@@ -98,27 +111,27 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
     @Override
     public void reportAmbiguity(Parser parser, DFA dfa, int lineNumber, int charPositionInLine, boolean b, BitSet bitSet, ATNConfigSet atnConfigSet) {
 
-        output = output + "You have an ambiguity: ";
+   /*     output = output + "You have an ambiguity: ";
         output = output + "\n You have a syntax error at line: " + lineNumber + "\n";
-        output = output + "At character position: " + charPositionInLine;
+        output = output + "At character position: " + charPositionInLine;*/
     }
 
     @Override
     public void reportAttemptingFullContext(Parser parser, DFA dfa, int lineNumber, int charPositionInLine, BitSet bitSet, ATNConfigSet atnConfigSet) {
 
-
+/*
 
         output = output + "Error: Attempting Full Context: ";
         output = output + "\n You have a syntax error at line: " + lineNumber + "\n";
-        output = output + "At character position: " + charPositionInLine;
+        output = output + "At character position: " + charPositionInLine;*/
 
     }
 
     @Override
     public void reportContextSensitivity(Parser parser, DFA dfa, int lineNumber, int charPositionInLine, int i2, ATNConfigSet atnConfigSet) {
-        output = output + "Error:  Context Sensitivity: ";
+       /* output = output + "Error:  Context Sensitivity: ";
         output = output + "\n You have a syntax error at line: " + lineNumber + "\n";
-        output = output + "At character position: " + charPositionInLine;
+        output = output + "At character position: " + charPositionInLine;*/
 
 
     }
