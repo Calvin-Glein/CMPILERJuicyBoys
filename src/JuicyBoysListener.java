@@ -127,6 +127,16 @@ public interface JuicyBoysListener extends ParseTreeListener {
 	 */
 	void exitData_type(JuicyBoysParser.Data_typeContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link JuicyBoysParser#array}.
+	 * @param ctx the parse tree
+	 */
+	void enterArray(JuicyBoysParser.ArrayContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JuicyBoysParser#array}.
+	 * @param ctx the parse tree
+	 */
+	void exitArray(JuicyBoysParser.ArrayContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link JuicyBoysParser#identifier_list}.
 	 * @param ctx the parse tree
 	 */

@@ -5,6 +5,16 @@ import org.antlr.v4.runtime.tree.TerminalNode;
 public class JuicyBoysWalker implements JuicyBoysListener {
 
     @Override
+    public void enterArray(JuicyBoysParser.ArrayContext ctx) {
+
+    }
+
+    @Override
+    public void exitArray(JuicyBoysParser.ArrayContext ctx) {
+
+    }
+
+    @Override
     public void enterStart(JuicyBoysParser.StartContext ctx) {
         // System.out.println("EnterStart");
     }

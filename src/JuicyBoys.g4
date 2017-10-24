@@ -28,10 +28,11 @@ main_function     	: VOID_KEYWORD MAIN_KEYWORD OPEN_PAR CLOSE_PAR (function_cont
 
 //Productions for variable declaration
 
-vardecl_list      	: var_decl TERMINATOR vardecl_list
+vardecl_list      	: var_decl ASSIGNMENT_OPERATOR expression TERMINATOR vardecl_list
                     | var_decl TERMINATOR
                     ;
 var_decl          	: data_type identifier_list
+                    | array
                     ;
 data_type         	: INTEGER_KEYWORD
                     | DOUBLE_KEYWORD
@@ -39,7 +40,8 @@ data_type         	: INTEGER_KEYWORD
                     | STRING_KEYWORD
                     | BOOLEAN_KEYWORD
                     | FLOAT_KEYWORD
-                    | ARRAY_IDENTIFIER
+                    ;
+array               : data_type ARRAY_IDENTIFIER
                     ;
 identifier_list   	: VARIABLE_IDENTIFIER COMMA identifier_list
                    	| VARIABLE_IDENTIFIER
@@ -100,8 +102,11 @@ statement_list    	    : statement statement_list
 expression        	    : string_expression
                     	| num_expression
                     	| bool_expression
+                    	| NOT_operator OPEN_PAR expression CLOSE_PAR
+                    	| expression rel_op expression
                     	| FUNCTION_IDENTIFIER OPEN_PAR actual_parameter_list CLOSE_PAR
                     	| FUNCTION_IDENTIFIER OPEN_PAR CLOSE_PAR
+                    	| OPEN_PAR expression CLOSE_PAR
                         ;
 string_expression 	    : VARIABLE_IDENTIFIER ADDITION_OPERATOR string_expression
                     	| STRING_LITERAL ADDITION_OPERATOR string_expression
@@ -148,9 +153,12 @@ rel_op            	: EQUALS_OPERATOR
                     	| GREATER_EQUAL_OPERATOR
                     	| LESS_THAN_OPERATOR
                     	| GREATER_THAN_OPERATOR
+                    	| AND_operator
+                    	| OR_operator
                         ;
 bool_logical      	: bool_term OR_operator bool_logical
                     	| bool_term
+
                         ;
 bool_term         	: bool_factor AND_operator bool_term
                     	| bool_factor
@@ -212,7 +220,7 @@ FLOAT_LITERAL	: [0-9]+'.'[0-9]+(('E' | 'e')'-'?[0-9]+)?
                         ;
 STRING_LITERAL	: QUOTE2 [ A-Za-z0-9!]* QUOTE2
                         ;
-VARIABLE_IDENTIFIER	: 'baryabol ' [A-Za-z]+[0-9]*
+VARIABLE_IDENTIFIER	: 'baryabol ' [A-Za-z_]+[0-9]*
                         ;
 COMMENT_BLOCK	: 'kowment!'  [A-Za-z0-9]* '!kowment'
                         ;
@@ -310,9 +318,9 @@ CLOSE_PAR	: ')'
                         ;
 COMMA	: ','
                         ;
-ARRAY_IDENTIFIER	: 'arey' [A-Za-z]
+ARRAY_IDENTIFIER	: 'arey ' [A-Za-z]+ '[' [0-9]+ ']'
                         ;
-FUNCTION_IDENTIFIER	: 'panksyon' [A-Za-z]+
+FUNCTION_IDENTIFIER	: 'panksyon ' [A-Za-z]+
                         ;
 CONSTANT_KEYWORD	: 'kunstant'
                         ;

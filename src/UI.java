@@ -1,3 +1,4 @@
+import org.antlr.v4.gui.TreeViewer;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.atn.PredictionMode;
 import org.antlr.v4.runtime.tree.ParseTree;
@@ -7,6 +8,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class UI {
     private JTextArea textAreaCodeInput;
@@ -17,6 +19,7 @@ public class UI {
     private JTextArea textAreaTree;
     public JTextArea textAreaError;
     private JScrollPane scrollPaneCodeInput;
+    private JTextArea textAreaExceptions;
     private TextLineNumber textLineNumber;
 
     private ArrayList<String> TokenTypes= new ArrayList<String>();
@@ -45,6 +48,10 @@ public class UI {
         frame.setVisible(true);
         frame.setSize(500, 500);
 
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
     }
 
     public static class BailSimpleLexer extends JuicyBoysLexer  {
@@ -81,7 +88,7 @@ public class UI {
 
         //remove lexer errorlistener
         lexer.removeErrorListeners();
-        //lexer.addErrorListener(errorListener);
+        lexer.addErrorListener(errorListener);
 
 
 
@@ -119,9 +126,22 @@ public class UI {
         }
 
 
-        textAreaTree.setText(tree.toStringTree(parser));
-        textAreaError.setText(errorListener.getOutput() + "Exceptions: "  + exceptionErrorStrategy.getErrors().toString());
+        JFrame frameTree = new JFrame("Antlr AST");
+        JPanel panelTree = new JPanel();
+        JScrollPane scrollPanePanelTree = new JScrollPane( panelTree );
+        TreeViewer viewr = new TreeViewer(Arrays.asList(
+                parser.getRuleNames()),tree);
+        viewr.setScale(1.5);//scale a little
+        panelTree.add(viewr);
+        frameTree.add(scrollPanePanelTree);
+        frameTree.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frameTree.setSize(200,200);
+        frameTree.setVisible(true);
 
+
+        textAreaTree.setText(tree.toStringTree(parser));
+        textAreaError.setText(errorListener.getOutput());
+        textAreaExceptions.setText("Exceptions: "  + exceptionErrorStrategy.getErrors().toString());
 
     }
 }

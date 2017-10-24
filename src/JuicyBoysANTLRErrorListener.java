@@ -27,9 +27,21 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
         stack = ((Parser) recognizer).getRuleInvocationStack();
         Collections.reverse(stack);
 
+        output = output + "Parser Error: ";
+
         output = output + "Rule stack: " + stack + "\n";
+
+        output = output + "You have a syntax error at line: " + lineNumber + "\n";
+        output = output + "At character position: " + charPositionInLine;
+        output = output + " \n \n Specific Error: " + msg.toString() + "\n\n ";
     }catch (Exception e2){
         //for lexer
+
+
+        output = output + "Lexer Error: ";
+        output = output + "\n You have a syntax error at line: " + lineNumber + "\n";
+        output = output + "At character position: " + charPositionInLine;
+        output = output + " \n \n Specific Error: " + msg.toString() + "\n\n ";
 
 
     }
@@ -41,12 +53,9 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
         System.out.println("At character position: " + i1);*/
 
 
-        output = output + "You have a syntax error at line: " + lineNumber + "\n";
-        output = output + "At character position: " + charPositionInLine;
-        output = output + " \n \n Specific Error: " + msg.toString();
 
 
-        JDialog dialog = new JDialog();
+      /*  JDialog dialog = new JDialog();
         Container contentPane = dialog.getContentPane();
         contentPane.add(new JLabel(msg.toString()));
         contentPane.setBackground(Color.white);
@@ -54,7 +63,7 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
         dialog.pack();
         dialog.setLocationRelativeTo(null);
         dialog.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        dialog.setVisible(true);
+        dialog.setVisible(true);*/
     }
 
     public Recognizer<?, ?> getRecognizer() {
@@ -87,21 +96,29 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
 
 
     @Override
-    public void reportAmbiguity(Parser parser, DFA dfa, int i, int i1, boolean b, BitSet bitSet, ATNConfigSet atnConfigSet) {
-        System.out.println("You have an ambiguity");
+    public void reportAmbiguity(Parser parser, DFA dfa, int lineNumber, int charPositionInLine, boolean b, BitSet bitSet, ATNConfigSet atnConfigSet) {
+
+        output = output + "You have an ambiguity: ";
+        output = output + "\n You have a syntax error at line: " + lineNumber + "\n";
+        output = output + "At character position: " + charPositionInLine;
+    }
+
+    @Override
+    public void reportAttemptingFullContext(Parser parser, DFA dfa, int lineNumber, int charPositionInLine, BitSet bitSet, ATNConfigSet atnConfigSet) {
+
+
+
+        output = output + "Error: Attempting Full Context: ";
+        output = output + "\n You have a syntax error at line: " + lineNumber + "\n";
+        output = output + "At character position: " + charPositionInLine;
 
     }
 
     @Override
-    public void reportAttemptingFullContext(Parser parser, DFA dfa, int i, int i1, BitSet bitSet, ATNConfigSet atnConfigSet) {
-        System.out.println("Error: Attempting Full Context");
-
-
-    }
-
-    @Override
-    public void reportContextSensitivity(Parser parser, DFA dfa, int i, int i1, int i2, ATNConfigSet atnConfigSet) {
-        System.out.println("Error: Context Sensitivity");
+    public void reportContextSensitivity(Parser parser, DFA dfa, int lineNumber, int charPositionInLine, int i2, ATNConfigSet atnConfigSet) {
+        output = output + "Error:  Context Sensitivity: ";
+        output = output + "\n You have a syntax error at line: " + lineNumber + "\n";
+        output = output + "At character position: " + charPositionInLine;
 
 
     }
