@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 import org.antlr.v4.runtime.DefaultErrorStrategy;
 import org.antlr.v4.runtime.FailedPredicateException;
@@ -34,20 +32,14 @@ public class ExceptionErrorStrategy extends DefaultErrorStrategy {
     @Override
     public void reportNoViableAlternative(Parser recognizer, NoViableAltException e)
     {
-        List<String> stack;
-
-        stack = (recognizer).getRuleInvocationStack();
-        Collections.reverse(stack);
-
         String msg = "No Viable Alternative " + getTokenErrorDisplay(e.getOffendingToken());
         msg += " expecting one of "+e.getExpectedTokens().toString(recognizer.getTokenNames());
         //   RecognitionException ex = new RecognitionException(msg, recognizer, recognizer.getInputStream(), recognizer.getContext());
         //  ex.initCause(e);
         // throw ex;
-        msg += " \n \n Stack: " + stack;
+
 
         System.out.println("report no viable alt: " +msg);
-
         error.add(msg);
     }
 

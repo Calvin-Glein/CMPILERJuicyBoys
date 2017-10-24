@@ -43,8 +43,8 @@ public class JuicyBoysANTLRErrorStrategy implements ANTLRErrorStrategy {
         System.out.println(var2.getOffendingToken());
         System.out.println(var2.getExpectedTokens());
         System.out.println(var2.getOffendingState());
-        System.out.print("1" + var1.getExpectedTokens());
-        System.out.print("2" + var1.getRuleInvocationStack().toString());
+        System.out.print("POTA1" + var1.getExpectedTokens());
+        System.out.print("POTA2" + var1.getRuleInvocationStack().toString());
 
         List<String> stack;
 
@@ -53,9 +53,9 @@ public class JuicyBoysANTLRErrorStrategy implements ANTLRErrorStrategy {
 
         System.out.println("Stack"  + stack);
 
-        System.out.print("3" + var1.getExpectedTokensWithinCurrentRule());
-        System.out.print("2" + var1.getParseInfo().toString());
+        System.out.print("POTA3" + var1.getExpectedTokensWithinCurrentRule());
+        System.out.print("POTA2" + var1.getParseInfo().toString());
 
-        System.out.println("test: " + var1.getErrorHeader(var2));
+        System.out.println("SHit: " + var1.getErrorHeader(var2));
     }
 }
