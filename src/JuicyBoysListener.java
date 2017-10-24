@@ -107,6 +107,26 @@ public interface JuicyBoysListener extends ParseTreeListener {
 	 */
 	void exitVardecl_list(JuicyBoysParser.Vardecl_listContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link JuicyBoysParser#functiondec_vardecl}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunctiondec_vardecl(JuicyBoysParser.Functiondec_vardeclContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JuicyBoysParser#functiondec_vardecl}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunctiondec_vardecl(JuicyBoysParser.Functiondec_vardeclContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JuicyBoysParser#functioncall_vardecl}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunctioncall_vardecl(JuicyBoysParser.Functioncall_vardeclContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JuicyBoysParser#functioncall_vardecl}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunctioncall_vardecl(JuicyBoysParser.Functioncall_vardeclContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link JuicyBoysParser#var_decl}.
 	 * @param ctx the parse tree
 	 */
@@ -156,6 +176,36 @@ public interface JuicyBoysListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitStatement(JuicyBoysParser.StatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JuicyBoysParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void enterOperator(JuicyBoysParser.OperatorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JuicyBoysParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void exitOperator(JuicyBoysParser.OperatorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JuicyBoysParser#special_operator}.
+	 * @param ctx the parse tree
+	 */
+	void enterSpecial_operator(JuicyBoysParser.Special_operatorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JuicyBoysParser#special_operator}.
+	 * @param ctx the parse tree
+	 */
+	void exitSpecial_operator(JuicyBoysParser.Special_operatorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JuicyBoysParser#double_sign_operator}.
+	 * @param ctx the parse tree
+	 */
+	void enterDouble_sign_operator(JuicyBoysParser.Double_sign_operatorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JuicyBoysParser#double_sign_operator}.
+	 * @param ctx the parse tree
+	 */
+	void exitDouble_sign_operator(JuicyBoysParser.Double_sign_operatorContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link JuicyBoysParser#assignment_statement}.
 	 * @param ctx the parse tree
@@ -266,6 +316,16 @@ public interface JuicyBoysListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitStatement_list(JuicyBoysParser.Statement_listContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JuicyBoysParser#literals}.
+	 * @param ctx the parse tree
+	 */
+	void enterLiterals(JuicyBoysParser.LiteralsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JuicyBoysParser#literals}.
+	 * @param ctx the parse tree
+	 */
+	void exitLiterals(JuicyBoysParser.LiteralsContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link JuicyBoysParser#expression}.
 	 * @param ctx the parse tree
