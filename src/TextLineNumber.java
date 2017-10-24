@@ -271,6 +271,9 @@ public class TextLineNumber extends JPanel
 		}
 	}
 
+
+
+
 	/*
 	 *  We need to know if the caret is currently positioned on the line we
 	 *  are about to paint so the line number can be highlighted.

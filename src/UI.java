@@ -54,7 +54,7 @@ public class UI {
     private void createUIComponents() {
         // TODO: place custom component creation code here
     }
-
+/*
     public static class BailSimpleLexer extends JuicyBoysLexer  {
         public BailSimpleLexer(CharStream input) { super(input); }
         public void recover(LexerNoViableAltException e) {
@@ -62,6 +62,7 @@ public class UI {
         }
     }
 
+*/
     public void run() {
         textAreaError.setText("");
         textArea2Output.setText("");
@@ -84,7 +85,7 @@ public class UI {
         parser.removeErrorListeners();
 
         //add our custom errorListener
-       // parser.addErrorListener(errorListener);
+        parser.addErrorListener(errorListener);
 
 
         //remove lexer errorlistener
@@ -94,11 +95,10 @@ public class UI {
 
 
 
-        parser.addErrorListener(new DiagnosticErrorListener());
+      //  parser.addErrorListener(new DiagnosticErrorListener());
 
         //make parser report all ambiguities
-        parser.getInterpreter()
-                .setPredictionMode(PredictionMode.LL_EXACT_AMBIG_DETECTION);
+        // parser.getInterpreter().setPredictionMode(PredictionMode.LL_EXACT_AMBIG_DETECTION);
 
 
         //add the bailerrorstrategy
@@ -135,13 +135,18 @@ public class UI {
         viewr.setScale(1.5);//scale a little
         panelTree.add(viewr);
         frameTree.add(scrollPanePanelTree);
-        frameTree.setSize(200,200);
+        frameTree.setSize(500,500);
         frameTree.setVisible(true);
 
 
         textAreaTree.setText(tree.toStringTree(parser));
         textAreaError.setText(errorListener.getOutput());
+        errorListener.getLineErrors();
         textAreaExceptions.setText("Exceptions: "  + exceptionErrorStrategy.getErrors().toString());
+
+        for(int i = 0; i < errorListener.getLineErrors().size(); i++){
+            //textLineNumber.
+        }
 
     }
 }
