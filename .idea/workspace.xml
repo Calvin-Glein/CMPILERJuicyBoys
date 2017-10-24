@@ -20,6 +20,8 @@
 =======
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Actual_parameter_listContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Actual_parameter_listContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Actual_paramsContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Actual_paramsContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Assignment_statementContext.class" afterPath="$PROJECT_DIR$/out/production/CMPILERJuicyBoys/JuicyBoysParser$Assignment_statementContext.class" />
@@ -60,6 +62,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JuicyBoysLexer.java" afterPath="$PROJECT_DIR$/src/JuicyBoysLexer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JuicyBoysParser.java" afterPath="$PROJECT_DIR$/src/JuicyBoysParser.java" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -85,6 +90,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="JuicyBoysBaseListener.java" pinned="false" current-in-tab="false">
@@ -118,10 +124,18 @@
             <state relative-caret-position="205">
               <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+      <file leaf-file-name="UI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1083#1084#0" expanded="true" />
                 <element signature="e#1120#1121#0" expanded="true" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 <marker date="1508873056624" expanded="false" signature="812:820" ph="&lt;~&gt;" />
@@ -151,11 +165,16 @@
 =======
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
                 <element signature="e#1842#1843#0" expanded="true" />
                 <element signature="e#1907#1908#0" expanded="true" />
                 <marker date="1508845299952" expanded="false" signature="812:820" ph="&lt;~&gt;" />
                 <marker date="1508845299952" expanded="false" signature="918:926" ph="&lt;~&gt;" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -164,6 +183,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="JuicyBoys.tokens" pinned="false" current-in-tab="false">
@@ -199,12 +219,17 @@
 =======
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
       <file leaf-file-name="JuicyBoys.g4" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JuicyBoys.g4">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="127">
               <caret line="222" column="38" lean-forward="false" selection-start-line="222" selection-start-column="38" selection-end-line="222" selection-end-column="38" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -248,7 +273,10 @@
       </file>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
       <file leaf-file-name="JuicyBoysBaseListener.java" pinned="false" current-in-tab="false">
@@ -309,7 +337,10 @@
     <findStrings>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
       <find>start</find>
@@ -343,6 +374,7 @@
       <find>output</find>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <find>string_literal</find>
       <find>function</find>
       <find>operator</find>
@@ -365,6 +397,10 @@
       <find>boyd simula () { numero baryabol counter ;istop }</find>
       <find>isCUrr</find>
       <find>for_state</find>
+=======
+      <find>statement</find>
+      <find>string_literal</find>
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
       <find>statement</find>
       <find>string_literal</find>
@@ -416,6 +452,9 @@
         <option value="$PROJECT_DIR$/src/JuicyBoysBaseListener.java" />
         <option value="$PROJECT_DIR$/src/JuicyBoysWalker.java" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -423,7 +462,10 @@
         <option value="$PROJECT_DIR$/src/UI.java" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
         <option value="$PROJECT_DIR$/src/JuicyBoys.g4" />
@@ -642,7 +684,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33126935" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -776,9 +822,12 @@
             <element signature="e#1120#1121#0" expanded="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <marker date="1508873056624" expanded="false" signature="812:820" ph="&lt;~&gt;" />
             <marker date="1508873056624" expanded="false" signature="918:926" ph="&lt;~&gt;" />
 =======
+=======
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
             <element signature="e#1842#1843#0" expanded="true" />
@@ -786,6 +835,9 @@
             <marker date="1508845299952" expanded="false" signature="812:820" ph="&lt;~&gt;" />
             <marker date="1508845299952" expanded="false" signature="918:926" ph="&lt;~&gt;" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -840,9 +892,12 @@
             <element signature="e#1120#1121#0" expanded="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <marker date="1508873056624" expanded="false" signature="812:820" ph="&lt;~&gt;" />
             <marker date="1508873056624" expanded="false" signature="918:926" ph="&lt;~&gt;" />
 =======
+=======
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
             <element signature="e#1842#1843#0" expanded="true" />
@@ -850,6 +905,9 @@
             <marker date="1508845299952" expanded="false" signature="812:820" ph="&lt;~&gt;" />
             <marker date="1508845299952" expanded="false" signature="918:926" ph="&lt;~&gt;" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -876,9 +934,12 @@
             <element signature="e#1120#1121#0" expanded="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <marker date="1508873056624" expanded="false" signature="812:820" ph="&lt;~&gt;" />
             <marker date="1508873056624" expanded="false" signature="918:926" ph="&lt;~&gt;" />
 =======
+=======
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
             <element signature="e#1842#1843#0" expanded="true" />
@@ -886,6 +947,9 @@
             <marker date="1508845299952" expanded="false" signature="812:820" ph="&lt;~&gt;" />
             <marker date="1508845299952" expanded="false" signature="918:926" ph="&lt;~&gt;" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -1120,6 +1184,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JuicyBoysWalker.java">
+<<<<<<< HEAD
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JuicyBoysANTLRErrorListener.java">
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
@@ -1138,6 +1215,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/JuicyBoysWalker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1177,6 +1255,8 @@
 =======
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
     <entry file="jar://$PROJECT_DIR$/../../antlr-4.7-complete.jar!/org/antlr/v4/runtime/tree/ParseTreeWalker.class">
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
       <provider selected="true" editor-type-id="text-editor">
@@ -1188,6 +1268,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/ExceptionErrorStrategy.java">
@@ -1222,10 +1303,17 @@
         <state relative-caret-position="205">
           <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+    <entry file="file://$PROJECT_DIR$/src/UI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1083#1084#0" expanded="true" />
             <element signature="e#1120#1121#0" expanded="true" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             <marker date="1508873056624" expanded="false" signature="812:820" ph="&lt;~&gt;" />
@@ -1233,11 +1321,16 @@
 =======
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
             <element signature="e#1842#1843#0" expanded="true" />
             <element signature="e#1907#1908#0" expanded="true" />
             <marker date="1508845299952" expanded="false" signature="812:820" ph="&lt;~&gt;" />
             <marker date="1508845299952" expanded="false" signature="918:926" ph="&lt;~&gt;" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
+=======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
@@ -1249,6 +1342,7 @@
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="1986">
           <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
           <folding>
@@ -1258,6 +1352,8 @@
             <element signature="e#3435#3436#0" expanded="true" />
           </folding>
 =======
+=======
+>>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
 =======
 >>>>>>> parent of 05dff53... Working parser test case 1,2,3 only if tama sila
         <state relative-caret-position="127">
