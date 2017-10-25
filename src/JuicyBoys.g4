@@ -231,6 +231,7 @@ sign              	: ADDITION_OPERATOR
 //Productions for Input and Output
 
 output              	: OUTPUT_FUNCTION OPEN_PAR STRING_LITERAL CLOSE_PAR TERMINATOR
+                        | OUTPUT_FUNCTION OPEN_PAR VARIABLE_IDENTIFIER CLOSE_PAR TERMINATOR
                         | OUTPUT_FUNCTION OPEN_PAR STRING_LITERAL CLOSE_PAR {notifyErrorListeners("Missing ';iStop' ");}
                         ;
 output_list	        : expression
@@ -264,7 +265,7 @@ STRING_LITERAL	: QUOTE2 [ A-Za-z0-9!:.]* QUOTE2
                         ;
 VARIABLE_IDENTIFIER	: 'baryabol ' [A-Za-z_]+[0-9]*
                         ;
-COMMENT_BLOCK	: 'kowment!'  [A-Za-z0-9]* '!kowment'
+COMMENT_BLOCK	: 'kowment! '  [A-Za-z0-9]* ' !kowment'
                         ;
 TERMINATOR	:   ';istop'
                         ;
@@ -284,7 +285,7 @@ VOID_KEYWORD	: 'boyd'
                         ;
 DOUBLE_KEYWORD	: 'dobol'
                         ;
-DO_LOOP	: 'gawin habang'
+DO_LOOP	: 'gawinhabang'
                         ;
 WHILE_LOOP	: 'habang'
                         ;

@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 import java.beans.*;
+import java.util.ArrayList;
 import java.util.HashMap;
 import javax.swing.*;
 import javax.swing.border.*;
@@ -36,6 +37,7 @@ public class TextLineNumber extends JPanel
 	private boolean updateFont;
 	private int borderGap;
 	private Color currentLineForeground;
+	private Color errorLineForeground;
 	private float digitAlignment;
 	private int minimumDisplayDigits;
 
@@ -45,6 +47,10 @@ public class TextLineNumber extends JPanel
     private int lastDigits;
     private int lastHeight;
     private int lastLine;
+
+
+
+    private JuicyBoysANTLRErrorListener errorListener;
 
 	private HashMap<String, FontMetrics> fonts;
 
@@ -73,7 +79,8 @@ public class TextLineNumber extends JPanel
 		setFont( component.getFont() );
 
 		setBorderGap( 5 );
-		setCurrentLineForeground( Color.RED );
+		setCurrentLineForeground( Color.BLUE );
+		setErrorLineForeground( Color.RED );
 		setDigitAlignment( RIGHT );
 		setMinimumDisplayDigits( minimumDisplayDigits );
 
@@ -81,6 +88,11 @@ public class TextLineNumber extends JPanel
 		component.addCaretListener( this );
 		component.addPropertyChangeListener("font", this);
 	}
+
+
+    public void setErrorListener(JuicyBoysANTLRErrorListener errorListener) {
+        this.errorListener = errorListener;
+    }
 
 	/**
 	 *  Gets the update font property
@@ -151,6 +163,26 @@ public class TextLineNumber extends JPanel
 	}
 
 	/**
+	 *  Gets the error line rendering Color
+	 *
+	 *  @return the Color used to render the error line number
+	 */
+	public Color getErrorLineForeground()
+	{
+		return errorLineForeground == null ? getForeground() : errorLineForeground;
+	}
+
+	/**
+	 *  The Color used to render the error line digits. Default is Coolor.RED.
+	 *
+	 *  @param errorLineForeground  the Color used to render the error line
+	 */
+	public void setErrorLineForeground(Color errorLineForeground)
+	{
+		this.errorLineForeground = errorLineForeground;
+	}
+
+	/**
 	 *  Gets the digit alignment
 	 *
 	 *  @return the alignment of the painted digits
@@ -168,7 +200,6 @@ public class TextLineNumber extends JPanel
 	 *  <li>TextLineNumber.CENTER
 	 *  <li>TextLineNumber.RIGHT (default)
 	 *	</ul>
-	 *  @param currentLineForeground  the Color used to render the current line
 	 */
 	public void setDigitAlignment(float digitAlignment)
 	{
@@ -245,27 +276,50 @@ public class TextLineNumber extends JPanel
 		int rowStartOffset = component.viewToModel( new Point(0, clip.y) );
 		int endOffset = component.viewToModel( new Point(0, clip.y + clip.height) );
 
+
 		while (rowStartOffset <= endOffset)
 		{
+
+
 			try
-            {
-    			if (isCurrentLine(rowStartOffset))
-    				g.setColor( getCurrentLineForeground() );
-    			else
-    				g.setColor( getForeground() );
+			{
+                // sets generic  line number background color
+                    g.setColor( getForeground() );
 
-    			//  Get the line number as a string and then determine the
-    			//  "X" and "Y" offsets for drawing the string.
+                // if line has error, make it red
+                ArrayList<Integer> errorLines = new ArrayList<>();
 
-    			String lineNumber = getTextLineNumber(rowStartOffset);
-    			int stringWidth = fontMetrics.stringWidth( lineNumber );
-    			int x = getOffsetX(availableWidth, stringWidth) + insets.left;
+                if (errorListener != null){
+                    errorLines = errorListener.getLineErrors();
+                    System.out.println(errorLines.size());
+                }
+
+
+			    for(int i=0; i<errorLines.size(); i++){
+                    System.out.println("LOLLOL");
+			        int lineNumber = Integer.parseInt(getTextLineNumber(rowStartOffset));
+			        if(lineNumber == errorLines.get(i)){
+                        g.setColor( getErrorLineForeground() );
+			            System.out.println("LOL");
+                    }
+                }
+
+                // if current line, set color to currentLineForeground
+                if (isCurrentLine(rowStartOffset))
+                    g.setColor( getCurrentLineForeground() );
+
+				//  Get the line number as a string and then determine the
+				//  "X" and "Y" offsets for drawing the string.
+
+				String lineNumber = getTextLineNumber(rowStartOffset);
+				int stringWidth = fontMetrics.stringWidth( lineNumber );
+				int x = getOffsetX(availableWidth, stringWidth) + insets.left;
 				int y = getOffsetY(rowStartOffset, fontMetrics);
-    			g.drawString(lineNumber, x, y);
+				g.drawString(lineNumber, x, y);
 
-    			//  Move to the next row
+				//  Move to the next row
 
-    			rowStartOffset = Utilities.getRowEnd(component, rowStartOffset) + 1;
+				rowStartOffset = Utilities.getRowEnd(component, rowStartOffset) + 1;
 			}
 			catch(Exception e) {break;}
 		}

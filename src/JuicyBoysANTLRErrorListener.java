@@ -55,7 +55,7 @@ public class JuicyBoysANTLRErrorListener implements ANTLRErrorListener {
 if(!lineErrors.contains(lineNumber)){
     output = output + "Error: ";
     output = output + "\n You have a syntax error at line: " + lineNumber + "\n";
-    output = output + "At character position: " + charPositionInLine;
+    output = output + " It is at the character position: " + charPositionInLine;
     output = output + " \n \n Specific Error: " + msg.toString() + "\n\n ";
 
     lineErrors.add(lineNumber);
